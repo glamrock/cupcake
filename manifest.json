@@ -21,5 +21,5 @@
     "https://crypto.stanford.edu/*",
     "background",
     "cookies" ],
-  "content_security_policy": "script-src 'self' 'unsafe-eval' https://crypto.stanford.edu/flashproxy/; object-src 'self' https://crypto.stanford.edu/flashproxy/",
-}
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://crypto.stanford.edu/flashproxy/; object-src 'self' https://crypto.stanford.edu/flashproxy/"
+  }
