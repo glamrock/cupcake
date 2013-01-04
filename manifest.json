@@ -1,0 +1,17 @@
+{
+  "name": "accomodaTor",
+  "version": "0.1",
+  "description": "Make a bridge automagically!",
+  "background_page" : "background.html",
+  "icons": {
+    "16" : "images/16.png",
+    "24" : "images/24.png",
+    "48" : "images/48.png",
+    "128" : "images/128.png"
+  },
+  "browser_action": {
+    "default_icon": "24.png",
+    "default_title": "accomodaTor",
+  },
+  "permissions": 
+}
