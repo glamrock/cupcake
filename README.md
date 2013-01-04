@@ -21,7 +21,7 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 [I knew you'd come around!](https://www.youtube.com/watch?v=HrlSkcHQnwI)
 
 ##Code notes
-**manifest.json**  
+###manifest.json
 - *incognito:split* This is useful during testing, so that incognito won't use cookies from standard browsing mode.  
 - *incognito:spanning* When deployed, this would allow proxy to continue even if all the browser windows are in incognito mode.  
 - *permissions:background* is used so that the extension will start/run on startup, before the browser is started.  
