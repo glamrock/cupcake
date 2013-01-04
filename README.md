@@ -28,5 +28,5 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 *permissions:cookies* allows reading/writing of cookies, but may not be necessary, since accomodator doesn't currently use the Cookies API.  
 
 ### References
-[1] https://crypto.stanford.edu/flashproxy/
+[1] https://crypto.stanford.edu/flashproxy/  
 [2] https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
