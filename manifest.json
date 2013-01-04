@@ -1,18 +1,24 @@
 {
   "name": "accomodaTor",
   "version": "0.1",
+  "manifest_version": 2,
   "description": "Make a bridge automagically!",
   "background_page" : "background.html",
-  "background": {"persistent": true, ...},
+  "background": {"persistent": true},
   "icons": {
-    "16" : "images/16.png",
-    "24" : "images/24.png",
+    "16" : "images/19.png",
+    "38" : "images/38.png",
     "48" : "images/48.png",
     "128" : "images/128.png"
   },
   "browser_action": {
-    "default_icon": "24.png",
+    "default_icon": "19.png",
     "default_title": "accomodaTor",
+    "default_popup": "menu.html"
   },
-  "permissions": 
+   "incognito": "split",
+  "permissions": [
+    "background",
+    "cookies",
+],
 }

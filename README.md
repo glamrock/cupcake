@@ -10,7 +10,7 @@ I kind of love/hate the idea, because visitors aren't willing participants and t
 
 So, what I want to do is take that same client-side code snippets and turn it into a browser extension. People install it and they opt-in to become really robust bridges. 
 
-##But... why bother?
+##But... why bother with flash proxies?
 *"The purpose of this project is to create many ephemeral bridge IP
 addresses, with the goal of outpacing a censor's ability to block them.
 Rather than increasing the number of bridges at static addresses, we aim
@@ -19,6 +19,13 @@ addresses."* [2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README)
 
 ##Oh. Well okay then. Carry on.
 [I knew you'd come around!](https://www.youtube.com/watch?v=HrlSkcHQnwI)
+
+##Code notes
+**manifest.json**
+*incognito:split* This is useful during testing, so that incognito won't use cookies from standard browsing mode.
+*incognito:spanning* When deployed, this would allow proxy to continue even if all the browser windows are in incognito mode.
+*permissions:background* is used so that the extension will start/run on startup, before the browser is started.
+*permissions:cookies* allows reading/writing of cookies, but may not be necessary, since accomodator doesn't currently use the Cookies API.
 
 ### References
 [1] https://crypto.stanford.edu/flashproxy/
