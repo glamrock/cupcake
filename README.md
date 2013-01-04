@@ -1,7 +1,7 @@
-accomodator
+Cupcake
 ===========
 
-accomodaTor is a browser extension that makes bridges automagically!.
+Cupcake is a browser extension that makes bridges automagically!.
 
 ##What the ding dong crap?
 There is this thing called a Flash Proxy[[1](https://crypto.stanford.edu/flashproxy/)] - basically a code snippet that you run on sites and visitors become tor bridges temporarily.
@@ -25,7 +25,7 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 - *incognito:split* This is useful during testing, so that incognito won't use cookies from standard browsing mode.  
 - *incognito:spanning* When deployed, this would allow proxy to continue even if all the browser windows are in incognito mode.  
 - *permissions:background* is used so that the extension will start/run on startup, before the browser is started.  
-- *permissions:cookies* allows reading/writing of cookies, but may not be necessary, since accomodator doesn't currently use the Cookies API.  
+- *permissions:cookies* allows reading/writing of cookies, but may not be necessary, since Cupcake doesn't currently use the Cookies API.  
 
 ### References
 [1] https://crypto.stanford.edu/flashproxy/  

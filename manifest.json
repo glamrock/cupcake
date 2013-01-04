@@ -1,5 +1,5 @@
 {
-  "name": "accomodaTor",
+  "name": "Cupcake",
   "version": "0.1",
   "manifest_version": 2,
   "description": "Make a bridge automagically!",
@@ -13,7 +13,7 @@
   },
   "browser_action": {
     "default_icon": "images/24.png",
-    "default_title": "accomodaTor",
+    "default_title": "Cupcake",
     "default_popup": "menu.html"
   },
    "incognito": "split",
