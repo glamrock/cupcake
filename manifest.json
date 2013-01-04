@@ -18,6 +18,8 @@
   },
    "incognito": "split",
   "permissions": [
+    "https://crypto.stanford.edu/*",
     "background",
-    "cookies" ]
+    "cookies" ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://crypto.stanford.edu/flashproxy/; object-src 'self' https://crypto.stanford.edu/flashproxy/",
 }
