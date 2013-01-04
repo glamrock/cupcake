@@ -3,6 +3,7 @@
   "version": "0.1",
   "description": "Make a bridge automagically!",
   "background_page" : "background.html",
+  "background": {"persistent": true, ...},
   "icons": {
     "16" : "images/16.png",
     "24" : "images/24.png",
