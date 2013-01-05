@@ -16,7 +16,7 @@
     "default_title": "Cupcake",
     "default_popup": "menu.html"
   },
-   "incognito": "split",
+   "incognito": "spanning",
   "permissions": [
     "https://crypto.stanford.edu/*",
     "background",
