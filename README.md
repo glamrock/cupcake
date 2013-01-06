@@ -3,7 +3,7 @@ Cupcake
 
 Cupcake is a browser extension that makes bridges automagically!.
 
-##What the ding dong crap?
+##What the frak?
 There is this thing called a Flash Proxy[[1](https://crypto.stanford.edu/flashproxy/)] - basically a code snippet that you run on sites and visitors become tor bridges temporarily.
 
 I kind of love/hate the idea, because visitors aren't willing participants and the bridges last a short short while. But it means that you don't have to run the whole Tor shebang if you only want to make bridges. It's really innovative, and uses technology that the majority of computer owners have enabled (JavaScript).
