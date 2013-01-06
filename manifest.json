@@ -3,9 +3,9 @@
   "version": "0.1",
   "manifest_version": 2,
   "description": "Make a bridge automagically!",
-  "background": { "page": "proxy.html",
-    "persistent": true},
+  "background": { "page": "proxy.html"},
   "icons": {
+    "19" : "images/24.png",
     "24" : "images/24.png",
     "38" : "images/48.png",
     "48" : "images/48.png",
@@ -16,10 +16,11 @@
     "default_title": "Cupcake",
     "default_popup": "menu.html"
   },
-   "incognito": "spanning",
+   "incognito": "split",
   "permissions": [
     "https://crypto.stanford.edu/*",
+    "http://crypto.stanford.edu/*",
     "background",
     "cookies" ],
-  "content_security_policy": "script-src 'self' 'unsafe-eval' https://crypto.stanford.edu/flashproxy/; object-src 'self' https://crypto.stanford.edu/flashproxy/"
+  "content_security_policy": "script-src 'self' https://*.stanford.edu; object-src 'self'"
   }
