@@ -1,6 +1,6 @@
 {
   "name": "Cupcake",
-  "version": "0.1",
+  "version": "0.5",
   "manifest_version": 2,
   "description": "Make a bridge automagically!",
   "background": { "page": "proxy.html"},
@@ -22,5 +22,5 @@
     "http://crypto.stanford.edu/*",
     "background",
     "cookies" ],
-  "content_security_policy": "script-src 'self' https://*.stanford.edu; object-src 'self'"
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://*.stanford.edu https://*.bamsoftware.com; object-src 'self'"
   }
