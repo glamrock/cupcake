@@ -5,14 +5,14 @@
   "description": "Make a bridge automagically!",
   "background": { "page": "proxy.html"},
   "icons": {
-    "19" : "images/24.png",
-    "24" : "images/24.png",
-    "38" : "images/48.png",
-    "48" : "images/48.png",
-    "128" : "images/128.png"
+    "19" : "images/cupcake19.png",
+    "24" : "images/cupcake24.png",
+    "38" : "images/cupcake48.png",
+    "48" : "images/cupcake48.png",
+    "128" : "images/cupcake128.png"
   },
   "browser_action": {
-    "default_icon": "images/24.png",
+    "default_icon": "images/cupcake48.png",
     "default_title": "Cupcake",
     "default_popup": "menu.html"
   },

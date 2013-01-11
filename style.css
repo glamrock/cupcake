@@ -1,5 +1,5 @@
 body {
-    width:330px;
+    width:400px;
     min-height:450px;
     overflow-x:hidden;
     overflow-y:scroll;
@@ -9,9 +9,17 @@ body {
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 13px;
 	line-height: 1.5em; 
-	background-color: #61a8a4;
-	background-repeat: repeat;
-	background: url(images/bg.jpg)
+	background-color: #444444;
+	background-repeat: no-repeat;
+	background: url(images/wood.jpg)
+}
+
+.credits {color: #444; }
+.credits a {
+    color: #3D1B42; 
+	font-weight: normal; 
+    text-decoration: none; 
+    border-bottom:1px dotted; 
 }
 
 a, a:link { 
