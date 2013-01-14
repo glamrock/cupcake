@@ -1,7 +1,10 @@
 Cupcake
 ===========
 
-Cupcake is a browser extension that makes bridges automagically!.
+Cupcake helps users makes bridges automagically!.
+* Browser extension for Chrome (v22+) and Firefox (v3+)
+* Wordpress plugin (v2+)
+* Drupal 6 module (v6.x)
 
 ##What the frak?
 There is this thing called a Flash Proxy[[1](https://crypto.stanford.edu/flashproxy/)] - basically a code snippet that you run on sites and visitors become tor bridges temporarily.
