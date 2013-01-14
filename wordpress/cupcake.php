@@ -7,9 +7,9 @@ Version: 0.5
 Author: Griffin Boyce
 Author URI: https://twitter.com/abditum
 Author Email: griffinboyce@gmail.com
-License:
+License: GPL
 
-  Copyright 2013 TODO (griffinboyce@gmail.com)
+  Copyright 2013 Griffin Boyce (griffinboyce@gmail.com)
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License, version 2, as 
@@ -33,7 +33,7 @@ function cupcake() {
     <a href="https://crypto.stanford.edu/flashproxy/options.html">[options]</a></div>';
 }
 
-// Now we set that function up to execute when the admin_notices action is called
+// Now we set that function up to execute when the footer is called
 add_action( 'wp_footer', 'cupcake' );
 
 // We need some CSS to position errythang
