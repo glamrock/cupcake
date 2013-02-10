@@ -31,7 +31,7 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 - *permissions:cookies* allows reading/writing of cookies, but may not be necessary, since Cupcake doesn't currently use the Cookies API.  
 
 ### License
-License is Creative Commons Attribution Noncomercial.
+Cupcake uses the Revised BSD license -- see license.txt for more info.
 
 ### References
 [1] https://crypto.stanford.edu/flashproxy/  
