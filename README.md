@@ -24,7 +24,7 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 [I knew you'd come around!](https://www.youtube.com/watch?v=HrlSkcHQnwI)
 
 ##Complete
-* Chrome - [download on google](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) or [github(https://github.com/glamrock/cupcake/blob/master/downloads/chrome.crx)]
+* Chrome - [download on google](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) or [github](https://github.com/glamrock/cupcake/blob/master/downloads/chrome.crx)
 * Wordpress
 * Drupal 6
 
