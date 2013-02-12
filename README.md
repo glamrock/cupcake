@@ -2,7 +2,7 @@ Cupcake
 ===========
 
 Cupcake helps users makes bridges automagically!.
-* Browser extension for Chrome (v22+) and Firefox (v3+)
+* Browser extension for [Chrome](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) (v22+) and Firefox (v3+)
 * Wordpress plugin (v2+)
 * Drupal 6 module (v6.x)
 
@@ -24,7 +24,7 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 [I knew you'd come around!](https://www.youtube.com/watch?v=HrlSkcHQnwI)
 
 ##Complete
-* Chrome
+* Chrome [download on google](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc)
 * Wordpress
 * Drupal 6
 
