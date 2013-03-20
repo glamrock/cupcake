@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>flash proxy facebook app demo</title>
+<style type="text/css">
+body {background-color:#fff;}
+
+#bridge {
+  background:white url('http://i.imgur.com/2OO5ZxX.gif') no-repeat 50% 50%;
+}
+
+#bridge iframe {
+  display:block;
+  padding:5%;
+  border:none;
+}
+
+</style>
+<script type="text/javascript">
+//doesn't block the load event
+function createIframe() {
+    var i = document.createElement("iframe");
+    i.src = "//crypto.stanford.edu/flashproxy/embed.html";
+    i.scrolling = "none";
+    i.frameborder = "0";
+    i.width = "520px";
+    i.height = "150px";
+    document.getElementById("bridge").appendChild(i);
+};
+
+// Check for browser support of event handling capability
+if (window.addEventListener) window.addEventListener("load", createIframe, false);
+else if (window.attachEvent) window.attachEvent("onload", createIframe);
+else window.onload = createIframe;
+</script>
+</head>
+<body>
+<div id="bridge"></div>
+</body>
+</html>
