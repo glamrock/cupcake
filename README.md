@@ -1,7 +1,7 @@
 Cupcake
 ===========
 
-Cupcake helps users makes bridges automagically!.
+Cupcake helps users makes bridges automagically!
 * Browser extension for [Chrome](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) (v22+) and Firefox (v3+)
 * Wordpress plugin (v2+)
 * Drupal 6 module (v6.x)
@@ -12,6 +12,8 @@ There is this thing called a Flash Proxy[[1](https://crypto.stanford.edu/flashpr
 I kind of love/hate the idea, because visitors aren't willing participants and the bridges last a short short while. But it means that you don't have to run the whole Tor shebang if you only want to make bridges. It's really innovative, and uses technology that the majority of computer owners have enabled (JavaScript).
 
 So, what I want to do is take that same client-side code snippets and turn it into a browser extension. People install it and they opt-in to become really robust bridges. 
+
+##The Goal: 12,000 bridges every day via cupcake.
 
 ##But... why bother with flash proxies?
 *"The purpose of this project is to create many ephemeral bridge IP
@@ -27,11 +29,27 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 * Chrome - [download on google](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) or [github](https://github.com/glamrock/cupcake/blob/master/downloads/chrome.crx)
 * Wordpress
 * Drupal 6
+* Facebook App Demo (html)
 
-##Needs work
-* Firefox
-* Opera
-* Safari
+##Next
+* Flash/SWF App Shim (actionscript & html)
+* Facebook WebApp Tutorial
+* Tumblr Theme (#1)
+* Firefox add-on
+
+##Roadmap -- next 30 days
+* Wordpress Theme
+* Tumblr Theme (#2)
+* Drupal 7 & 5 modules
+* Safari (@Kewagi is working a bit on this)
+
+##Low-priority tasks that demand a lot of time
+* Rolling a custom analytics system to replace GoSquared
+* RefineryCMS add-on
+* Opera add-on
+* Joomla Extension
+
+
 
 ##Code notes
 ###chrome/manifest.json

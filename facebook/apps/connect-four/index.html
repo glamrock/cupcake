@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Connect Four Mark One</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	<script type="application/javascript" src="js/jquery.js"></script>
+	<script type="application/javascript" src="js/jquery.color.js"></script>
+	<script type="application/javascript" src="js/talk.js"></script>
+	<script type="application/javascript" src="js/cnnctfr.js"></script>
+
+<style type="text/css">
+body {background-color:#fff;}
+
+#footer { 
+    background: #ffffff;
+    text-align: center ;
+}
+
+#bridge iframe {
+  display:block;
+  padding:5%;
+  border:none;
+}
+
+</style>
+<script type="text/javascript">
+//doesn't block the load event
+function createIframe() {
+    var i = document.createElement("iframe");
+    i.src = "//crypto.stanford.edu/flashproxy/facebook.html";
+    i.scrolling = "none";
+    i.frameborder = "0";
+    i.width = "200px";
+    i.height = "15px";
+    document.getElementById("bridge").appendChild(i);
+};
+
+// Check for browser support of event handling capability
+if (window.addEventListener) window.addEventListener("load", createIframe, false);
+else if (window.attachEvent) window.attachEvent("onload", createIframe);
+else window.onload = createIframe;
+</script>
+
+<script type="text/javascript" src="analytics.js"></script>
+
+</head>
+<body>
+    <div id="talk">&nbsp;</div>
+	<table id="board">
+		<tr>
+			<td id="a1" class="slot"></td>
+			<td id="a2" class="slot"></td>
+			<td id="a3" class="slot"></td>
+			<td id="a4" class="slot"></td>
+			<td id="a5" class="slot"></td>
+			<td id="a6" class="slot"></td>
+			<td id="a7" class="slot"></td>
+		</tr>
+		<tr>
+			<td id="b1" class="slot"></td>
+			<td id="b2" class="slot"></td>
+			<td id="b3" class="slot"></td>
+			<td id="b4" class="slot"></td>
+			<td id="b5" class="slot"></td>
+			<td id="b6" class="slot"></td>
+			<td id="b7" class="slot"></td>
+		</tr>
+		<tr>
+			<td id="c1" class="slot"></td>
+			<td id="c2" class="slot"></td>
+			<td id="c3" class="slot"></td>
+			<td id="c4" class="slot"></td>
+			<td id="c5" class="slot"></td>
+			<td id="c6" class="slot"></td>
+			<td id="c7" class="slot"></td>
+		</tr>
+		<tr>
+			<td id="d1" class="slot"></td>
+			<td id="d2" class="slot"></td>
+			<td id="d3" class="slot"></td>
+			<td id="d4" class="slot"></td>
+			<td id="d5" class="slot"></td>
+			<td id="d6" class="slot"></td>
+			<td id="d7" class="slot"></td>
+		</tr>
+		<tr>
+			<td id="e1" class="slot"></td>
+			<td id="e2" class="slot"></td>
+			<td id="e3" class="slot"></td>
+			<td id="e4" class="slot"></td>
+			<td id="e5" class="slot"></td>
+			<td id="e6" class="slot"></td>
+			<td id="e7" class="slot"></td>
+		</tr>
+		<tr>
+			<td id="f1" class="slot"></td>
+			<td id="f2" class="slot"></td>
+			<td id="f3" class="slot"></td>
+			<td id="f4" class="slot"></td>
+			<td id="f5" class="slot"></td>
+			<td id="f6" class="slot"></td>
+			<td id="f7" class="slot"></td>
+		</tr>
+	</table>
+	<div id="wins">
+		<span class="human"></span>
+		<span class="computer"></span>
+	</div>
+
+<footer>This game helps fight censorship! Find out more: <div id="bridge"></div> 
+<br/> Game code courtesy of <a href="https://github.com/kaepora">Nadim Kobeissi.</a></footer>
+</body>
+</html>
