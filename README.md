@@ -13,7 +13,7 @@ I kind of love/hate the idea, because visitors aren't willing participants and t
 
 So, what I want to do is take that same client-side code snippets and turn it into a browser extension. People install it and they opt-in to become really robust bridges. 
 
-##The Goal: 12,000 bridges every day via cupcake.
+#The Goal: 12,000 bridges every day via cupcake.
 
 ##But... why bother with flash proxies?
 *"The purpose of this project is to create many ephemeral bridge IP
