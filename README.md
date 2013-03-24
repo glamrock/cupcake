@@ -2,7 +2,7 @@ Cupcake Bridge
 ===========
 
 Cupcake Bridge helps users makes bridges automagically!
-* Cupcake Browser extension for [Chrome](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) (v22+) and Firefox (v3+)
+* Cupcake Browser extension for [Chrome](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) (v22+) and Firefox (v3+, coming soon)
 * Wordpress plugin (v2+)
 * Drupal 6 module (v6.x)
 
