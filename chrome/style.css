@@ -5,34 +5,24 @@ body {
     overflow-y:scroll;
     margin: 10;
     padding: 0;
-	color: #d6e5e4;
+	color: #000;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 13px;
 	line-height: 1.5em; 
-	background-color: #444444;
 	background-repeat: no-repeat;
 	background: url(images/bg.jpg)
 }
 
 a, a:link { 
-	color: #ffffff; 
 	font-weight: normal; 
     text-decoration: none; 
     border-bottom:1px dotted; 
-}
-
-a:visited {
-    color: #F7F7F7;
 }
 
 p { 
 	margin: 0 0 10px 0; 
 	padding: 0; 
 }
-
-.white {color:#ffffff; font-size: 14px}
-
-em { color: #fff; }
 
 h1, h2, h3, h4, h5, h6 { color: #000; font-weight: normal;  font-family: Georgia, "Times New Roman", Times, serif }
 h1 { font-size: 34px; margin: 0 0 20px; padding: 5px 0 }
