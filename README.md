@@ -13,8 +13,6 @@ I kind of love/hate the idea, because visitors aren't willing participants and t
 
 So, what I want to do is take that same client-side code snippets and turn it into a browser extension. People install it and they opt-in to become really robust bridges. 
 
-#The Goal: 12,000 bridges every day via cupcake.
-
 ##But... why bother with flash proxies?
 *"The purpose of this project is to create many ephemeral bridge IP
 addresses, with the goal of outpacing a censor's ability to block them.
@@ -29,13 +27,16 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 * Chrome - [download on google](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) or [github](https://github.com/glamrock/cupcake/blob/master/downloads/chrome.crx)
 * Wordpress
 * Drupal 6
-* Facebook App Demo (html)
+* Facebook App (html5/css3/javascript)
+* Flex shim
+* Tumblr demo [post](http://blog.cryptic.be/post/47018950850/le-demo)
 
 ##Next
 * Flash/SWF App Shim (actionscript & html)
 * Facebook WebApp Tutorial
 * Tumblr Theme (#1)
 * Firefox add-on
+* PDF shim (js)
 
 ##Roadmap -- next 30 days
 * Wordpress Theme
@@ -48,8 +49,6 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 * RefineryCMS add-on
 * Opera add-on
 * Joomla Extension
-
-
 
 ##Code notes
 ###chrome/manifest.json
