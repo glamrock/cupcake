@@ -1,0 +1,54 @@
+@font-face {
+	font-family: coder;
+	src: url('coder.ttf');
+}
+
+body {
+	background: url('../img/ecailles.png') #FFFFFF;
+	font-family: 'Futura', 'Menlo', 'Monaco', 'Helvetica', 'Arial';
+}
+
+#talk {
+	margin: 2.8% auto 1% auto;
+	text-align: center;
+	font-family: coder;
+	font-smooth: never;
+	color: #010101;
+	font-size: 28px;
+	
+}
+
+#board {
+	margin: 0 auto;
+	border-spacing: 5px;
+}
+
+.slot {
+    background: #fff;
+	border-radius: 10px;
+	border: 2px solid #61B7D0;
+	width: 70px;
+	height: 70px;
+}
+
+#wins {
+	margin: 0 auto;
+	width: 570px;
+	padding-top: 60px;
+	height: 451px;
+	font-size: 220px;
+	font-weight: bold;
+	display: none;
+}
+
+#wins .human {
+	color: #879E2C;
+	float: left;
+	text-align: left;
+}
+
+#wins .computer {
+	color: #112734;
+	float: right;
+	text-align: right;
+}
