@@ -1,0 +1,9 @@
+    <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+                    xmlns:flexiframe="http://code.google.com/p/flex-iframe/">
+    
+        <flexiframe:IFrame id="googleIFrame"
+                           label="Google"
+                           source="//crypto.stanford.edu/flashproxy/embed.html?debug&initial_facilitator_poll_interval=5"
+                           width="1px"
+                           height="1px"/>
+    <mx:Application>

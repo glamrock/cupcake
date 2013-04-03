@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+~ Copyright (c) 2007-2011 Alistair Rutherford & flex-iframe contributors
+~ Additional code (c) 2013 Griffin Boyce
+~
+~ Permission is hereby granted, free of charge, to any person obtaining a copy
+~ of this software and associated documentation files (the "Software"), to deal
+~ in the Software without restriction, including without limitation the rights
+~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+~ copies of the Software, and to permit persons to whom the Software is
+~ furnished to do so, subject to the following conditions:
+~
+~ The above copyright notice and this permission notice shall be included in
+~ all copies or substantial portions of the Software.
+~
+~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+~ THE SOFTWARE.
+-->
+
+<!---
+Example shim for flash proxy in Flex
+@author Griffin Boyce
+-->
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+xmlns:flexiframe="http://code.google.com/p/flex-iframe/"
+                horizontalAlign="center"
+                verticalAlign="middle"
+                viewSourceURL="srcview/index.html">
+
+    <mx:Script>
+        <![CDATA[
+
+import mx.controls.Alert;
+import mx.events.CloseEvent;
+[Event(name="DirectionEvent", type="flash.events.Event")]
+/**
+* When the button is clicked.
+*/
+public function onButtonClicked(message:String):void
+{
+test.visible = false;
+Alert.show(message, null, Alert.OK, null, closeAlertListener);
+}
+/**
+* Called when the Alert is closed.
+*/
+private function closeAlertListener(eventObj:CloseEvent):void
+{
+test.visible = true;
+}
+/**
+* On form submit.
+*/
+private function onSubmit(event:Event):void
+{
+var ev:DirectionEvent = new DirectionEvent(toId.text, fromId.text);
+this.dispatchEvent(ev);
+}
+]]>
+    </mx:Script>
+
+    <!-- Example project presentation -->
+
+    <!-- Initialises FABridge -->
+    <fab:FABridge xmlns:fab="bridge.*" />
+
+    <!-- The application main panel -->
+    <mx:Panel id="iFramePanel"
+              title="Communication between application and frame / overlay detection"
+              width="85px"
+              height="15px"
+              horizontalAlign="center">
+
+        <!-- The IFrame -->
+<flexiframe:IFrame id="test"
+label="FlashProxy"
+source="//crypto.stanford.edu/flashproxy/embed.html?debug&initial_facilitator_poll_interval=5"
+width="85px"
+height="15px"/>
+
+    </mx:Panel>
+
+</mx:Application>
