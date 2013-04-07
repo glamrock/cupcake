@@ -2,9 +2,7 @@ Cupcake Bridge
 ===========
 
 Cupcake Bridge helps users makes bridges automagically!
-* Cupcake Browser extension for [Chrome](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) (v22+) and Firefox (v3+, coming soon)
-* Wordpress plugin (v2+)
-* Drupal 6 module (v6.x)
+Get the Cupcake browser extension for [Chrome](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) (v22+) and Firefox (v3+, coming soon)
 
 ##What the frak?
 There is this thing called a Flash Proxy[[1](https://crypto.stanford.edu/flashproxy/)] - basically a code snippet that you run on sites and visitors become tor bridges temporarily.
@@ -29,12 +27,15 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 * Drupal 6
 * Facebook App (html5/css3/javascript)
 * Flex shim
-* Tumblr demo [post](http://blog.cryptic.be/post/47018950850/le-demo)
+* Tumblr post demo [post](http://blog.cryptic.be/post/47018950850/le-demo)
+
+##Beta
+* Tumblr theme #1
+* /img-embed
 
 ##Next
 * Flash/SWF App Shim (actionscript & html)
 * Facebook WebApp Tutorial
-* Tumblr Theme (#1)
 * Firefox add-on
 * PDF shim (js)
 
