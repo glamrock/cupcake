@@ -45,6 +45,9 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 * Drupal 7 & 5 modules
 * Safari (@Kewagi is working a bit on this)
 
+##High-priority tasks that are difficult to fix
+* Enabling wordpress.COM users to add cupcake to their theme.
+
 ##Low-priority tasks that demand a lot of time
 * Rolling a custom analytics system to replace GoSquared
 * RefineryCMS add-on
@@ -59,6 +62,8 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 - *permissions:cookies* allows reading/writing of cookies, but may not be necessary, since Cupcake doesn't currently use the Cookies API.  
 
 ### License
+My software is free to use, free to give to friends, & open-source, so everyone can make sure it's safe for people to use.
+
 Cupcake uses the Revised BSD license -- see license.txt for more info.
 
 ### References
