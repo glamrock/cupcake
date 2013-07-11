@@ -20,7 +20,9 @@
   "permissions": [
     "https://crypto.stanford.edu/*",
     "http://crypto.stanford.edu/*",
+    "http://fp-facilitator.org/*",
+    
     "background",
     "cookies" ],
-  "content_security_policy": "script-src 'self' 'unsafe-eval' https://*.stanford.edu https://*.bamsoftware.com; object-src 'self'"
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://*.stanford.edu https://*.bamsoftware.com https://*.fp-facilitator.org; object-src 'self'"
   }
