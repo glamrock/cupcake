@@ -34,21 +34,22 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 * /img-embed
 
 ##Next
-* Flash/SWF App Shim (actionscript & html)
 * Facebook WebApp Tutorial
 * Firefox add-on
-* PDF shim (js)
+* Opera 15+ extension
 
-##Roadmap -- next 30 days
+##Roadmap
 * Wordpress Theme
 * Tumblr Theme (#2)
 * Drupal 7 & 5 modules
-* Safari (@Kewagi is working a bit on this)
+* Safari
+* Flash/SWF App Shim (actionscript & html)
 
 ##High-priority tasks that are difficult to fix
 * Enabling wordpress.COM users to add cupcake to their theme.
 
 ##Low-priority tasks that demand a lot of time
+* Opera 12 extension
 * Rolling a custom analytics system to replace GoSquared
 * RefineryCMS add-on
 * Opera add-on
