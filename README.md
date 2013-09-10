@@ -34,11 +34,12 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 * /img-embed
 
 ##Next
-* Facebook WebApp Tutorial
+* Translation - [Help Out!](https://www.transifex.com/projects/p/cupcake/)
 * Firefox add-on
 * Opera 15+ extension
 
 ##Roadmap
+* Facebook WebApp Tutorial
 * Wordpress Theme
 * Tumblr Theme (#2)
 * Drupal 7 & 5 modules
