@@ -1,0 +1,17 @@
+Cupcake
+Status:
+What your status means
+Working: if your status is light blue or dark blue, your proxy is running.
+Dark blue means the proxy is running but no one is using it right now.
+Light blue means someone is using your proxy right now. Neat!
+Not working: if your status is grey or black, there was a problem and your proxy is not running.
+Gray means that the badge has disabled itself. Try restarting your browser. If the problem persists, you might not be able to use Cupcake with this computer.
+Black means that there was an internal error and the proxy is no longer running. Try restarting your browser.
+Options
+To change your options, please visit the options page
+Credits
+About
+Made by Griffin, who is not affiliated with the Tor Project in any way. 
+He likes cats.
+Fork this extension on github.
+Check out the Flash Proxy project at Stanford! Their code made this possible.
