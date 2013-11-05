@@ -4,6 +4,8 @@ Cupcake Bridge
 Cupcake Bridge helps users makes bridges automagically!
 Get the Cupcake browser extension for [Chrome](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) (v22+) and Firefox (v3+, coming soon)
 
+**Contact**: Griffin Boyce, griffin @ cryptolab.net 
+
 ##What the frak?
 There is this thing called a Flash Proxy[[1](https://crypto.stanford.edu/flashproxy/)] - basically a code snippet that you run on sites and visitors become tor bridges temporarily.
 
@@ -24,14 +26,12 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 ##Complete
 * Chrome - [download on google](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) or [github](https://github.com/glamrock/cupcake/blob/master/downloads/chrome.crx)
 * Wordpress
-* Drupal 6
 * Facebook App (html5/css3/javascript)
 * Flex shim
-* Tumblr post demo [post](http://blog.cryptic.be/post/47018950850/le-demo)
 
 ##Beta
-* Tumblr theme #1
-* /img-embed
+* Drupal 6 module
+* Flex shim for Flash games
 
 ##Next
 * Translation - [Help Out!](https://www.transifex.com/projects/p/cupcake/)
@@ -47,14 +47,22 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 * Flash/SWF App Shim (actionscript & html)
 
 ##High-priority tasks that are difficult to fix
-* Enabling wordpress.COM users to add cupcake to their theme.
+* Enabling wordpress.COM users to add flashproxy to their theme. (Can you help with this? Send me an email! griffin @ cryptolab.net )
 
 ##Low-priority tasks that demand a lot of time
 * Opera 12 extension
 * Rolling a custom analytics system to replace GoSquared
 * RefineryCMS add-on
-* Opera add-on
+* Opera 15 add-on
 * Joomla Extension
+
+##Failed experiments
+* /img-embed
+
+##Surprisingly-sucessful experiments
+* Tumblr post demo [post](http://newhopegriffin.tumblr.com/post/47018950850/le-demo)
+* Tumblr [theme demo](http://newhopegriffin.tumblr.com)
+* Facebook App (html5/css3/javascript)
 
 ##Code notes
 ###chrome/manifest.json
@@ -64,9 +72,12 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 - *permissions:cookies* allows reading/writing of cookies, but may not be necessary, since Cupcake doesn't currently use the Cookies API.  
 
 ### License
-My software is free to use, free to give to friends, & open-source, so everyone can make sure it's safe for people to use.
+My software is free to use, free to give to friends, & open-source, so everyone can make sure it's safe for people to use. Want to make changes? Go for it! :dog:
 
 Cupcake uses the Revised BSD license -- see license.txt for more info.
+
+### Cute dog
+![dawww, lookit dat little tongue so cute](http://i.imgur.com/JYO9P6j.jpg)
 
 ### References
 [1] https://crypto.stanford.edu/flashproxy/  
