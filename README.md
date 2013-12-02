@@ -6,12 +6,15 @@ Get the Cupcake browser extension for [Chrome](https://chrome.google.com/webstor
 
 **Contact**: Griffin Boyce, griffin @ cryptolab.net 
 
-##What the frak?
+##What even is Cupcake?
+Cupcake uses something called Flashproxy to create special Tor bridges that are harder to block. As with all circumvention projects, there's a *lot* more to it than that, but that is the jist. Flashproxy was created by David Fifield, and there is a lot of ongoing research in this area.  You can learn more at the <a href="http://crypto.stanford.edu/flashproxy">Stanford Flashproxy site</a>.  Cupcake exists as an easy way to distribute Flashproxy, with the goal of getting as many people to become bridges as possible.
+
+##What the frak is a Flashproxy?
 There is this thing called a Flash Proxy[[1](https://crypto.stanford.edu/flashproxy/)] - basically a code snippet that you run on sites and visitors become tor bridges temporarily.
 
 I kind of love/hate the idea, because visitors aren't willing participants and the bridges last a short short while. But it means that you don't have to run the whole Tor shebang if you only want to make bridges. It's really innovative, and uses technology that the majority of computer owners have enabled (JavaScript).
 
-So, what I want to do is take that same client-side code snippets and turn it into a browser extension. People install it and they opt-in to become really robust bridges. 
+So, what I decided to do is take that same client-side code snippets and turn it into a browser extension. People install it and they opt-in to become really robust bridges. It was a total experiment, but it went so well that I decided to expand the project.
 
 ##But... why bother with flash proxies?
 *"The purpose of this project is to create many ephemeral bridge IP
@@ -34,12 +37,12 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 * Flex shim for Flash games
 
 ##Next
+* Better UX for Wordpress and Drupal plugins
 * Translation - [Help Out!](https://www.transifex.com/projects/p/cupcake/)
 * Firefox add-on
-* Opera 15+ extension
+* Metrics (with the idea of pushing this functionality upstream to Flashproxy.js)
 
 ##Roadmap
-* Facebook WebApp Tutorial
 * Wordpress Theme
 * Tumblr Theme (#2)
 * Drupal 7 & 5 modules
@@ -51,7 +54,6 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 
 ##Low-priority tasks that demand a lot of time
 * Opera 12 extension
-* Rolling a custom analytics system to replace GoSquared
 * RefineryCMS add-on
 * Opera 15 add-on
 * Joomla Extension
@@ -61,14 +63,14 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 
 ##Surprisingly-sucessful experiments
 * Tumblr post demo [post](http://newhopegriffin.tumblr.com/post/47018950850/le-demo)
-* Tumblr [theme demo](http://newhopegriffin.tumblr.com)
+* Tumblr theme demo (new link coming soon)
 * Facebook App (html5/css3/javascript)
 
 ##Code notes
 ###chrome/manifest.json
 - *incognito:split* This is useful during testing, so that incognito won't use cookies from standard browsing mode.  
 - *incognito:spanning* When deployed, prevents incognito windows from creating additional Cupcake processes. Proxy will continue even if all the browser windows are in incognito mode.  
-- *permissions:background* is used so that the extension will start/run on startup, before the browser is started.  
+- *permissions:background* is used so that the extension will notify of updates and display the post-installation page. Also used so that Cupcake will start/run on startup, before the browser is started (Windows only).
 - *permissions:cookies* allows reading/writing of cookies, but may not be necessary, since Cupcake doesn't currently use the Cookies API.  
 
 ### License
