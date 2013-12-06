@@ -9,6 +9,10 @@ Get the Cupcake browser extension for [Chrome](https://chrome.google.com/webstor
 ##What even is Cupcake?
 Cupcake uses something called Flashproxy to create special Tor bridges that are harder to block. As with all circumvention projects, there's a *lot* more to it than that, but that is the jist. Flashproxy was created by David Fifield, and there is a lot of ongoing research in this area.  You can learn more at the <a href="http://crypto.stanford.edu/flashproxy">Stanford Flashproxy site</a>.  Cupcake exists as an easy way to distribute Flashproxy, with the goal of getting as many people to become bridges as possible.
 
+Cupcake can be distributed in two ways:
+ * As a module/theme/app on popular web platforms (turning every visitor to your site in to a temporary proxy)
+ * As a chrome extension (turning your computer in to a less temporary proxy)
+
 ##What the frak is a Flashproxy?
 There is this thing called a Flash Proxy[[1](https://crypto.stanford.edu/flashproxy/)] - basically a code snippet that you run on sites and visitors become tor bridges temporarily.
 
