@@ -1,9 +1,0 @@
-Cupcake helps censored people access the web using Tor, by creating bridges for the internet's most censored users.
-
-If you are being censored, please install the full Tor Browser Bundle. Cupcake can't bypass censorship on its own!
-
-The Tor Project helps people overcome censorship. If you aren't familiar with Tor, please read up on it before installing Cupcake. More info: https://torproject.org
-
-But it means that you don't have to run the entire Tor software suite if you only want to make bridges. It's also the only way (currently) to create a Tor bridge if you are a Chrome OS user.
-
-For more information on the science of flash proxy, check out David Fifield's work at Stanford: https://crypto.stanford.edu/flashproxy
