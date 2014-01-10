@@ -1,0 +1,9 @@
+Cupcake pomáha cenzurovaným ľuďom pristupovať na web pomocou Toru, vytváraním mostov pre najviac cenzurovaných používateľov internetu.
+
+Ak ste cenzurovaní, prosíme nainštalujte si kompletný Tor Browser balíček. Cupcake nemôže obísť cenzúru len tak sám o sebe!
+
+Projekt Tor pomáha ľuďom obchádzať cenzúru. Ak Vám Tor nie je známy, prosíme pred inštaláciou Cupcaku si o ňom niečo prečítajte. Viac informácii: https://torproject.org
+
+Nemusíte ale mať spustenú kompletnú softvérovú výbavu Toru, iba ak chcete vytvárať mosty. V prípade Chrome OS je to však  (zatiaľ) jediný spôsob, ako ich vytvárať.
+
+Pre viac informácii ohľadom tzv. flash proxy, pozrite si prácu Davida Fifielda v Stanforde: https://crypto.stanford.edu/flashproxy

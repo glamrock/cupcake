@@ -1,0 +1,9 @@
+Cupcake ajuda as pessoas censuradas a acessar a web usando o Tor, criando conexões para os usuários que estão sendo censurados na internet.
+
+Se você está sendo censurado, por favor, instale o pacote completo do navegador Tor. Cupcake não pode evitar a censura por si próprio!
+
+O Projeto Tor ajuda as pessoas à superarem a censura. Se você não estiver familiarizado com o Tor, por favor, leia mais sobre ele antes de instalar o Cupcake. Mais informações sobre o projeto Tor podem ser acessadas no link: https://torproject.org
+
+Mas isso significa que você não tem que executar todo o conjunto de software do Tor, se você só quer fazer conexões. É também a única forma (atualmente) para criar uma conexão Tor se você é um usuário do Chrome OS.
+
+Para mais informações sobre a ciência do proxy flash, confira o trabalho de David Fifield na Stanford: https://crypto.stanford.edu/flashproxy

@@ -1,0 +1,9 @@
+Cupcake omogoča ljudem obiti cenzuro pri dostopu do spleta s pomočjo Torja, tako da ustvarja mostove za najbolj prizadete uporabnike interneta.
+
+V kolikor vam omejujejo dostop, si namestite Tor Browser Bundle. Cupcate sam ne more obiti cenzure!
+
+Tor Project pomaga ljudem prebroditi cenzuro. Če ne znate rokovati s Tor omrežjem, si preberite več o njem, preden boste namestili Cupcake. Več informacij na: https://torproject.org
+
+Toda ni vam potrebno imeti nameščene celotne zbirke programja Tor, da bi poganjali mostove. Le, če uporabljate Chrome OS, to (za zdaj) še ni možno.
+
+Za več znanstvenih informacij o bliskovitem posredniškem strežniku si oglejte Fifield, Davidovo delo na Stanfordu: https://crypto.stanford.edu/flashproxy

@@ -1,0 +1,28 @@
+Liberdade na Internet
+Censura
+Liberdade de Expressão
+Está funcionando!
+Funcionando
+Não está funcionando
+Algo está errado
+Por favor, verifique as suas configurações.
+Leia mais
+Pesquisa
+Se o problema persistir, pode ser que você não consiga usar o programa Cupcake.
+Obrigado!
+Mude suas opções
+Para
+Inicie
+Reinicie
+Pare
+(Cupcake irá reiniciar na próxima vez que você abrir o navegador).
+Salve as alterações
+Por dia
+Dias
+(Número de pessoas conectadas neste momento)
+Usuários conectados
+Dados transmitidos
+Nos últimos trinta dias
+Desde a sua instalação
+Opções
+Cupcake

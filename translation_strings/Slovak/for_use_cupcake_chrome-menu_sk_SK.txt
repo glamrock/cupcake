@@ -1,0 +1,17 @@
+Cupcake
+Status:
+Čo Váš status znamená
+Pracujúci: ak Váš status je svetlo alebo tmavo modrý, Váš proxy je spustený.
+Tmavo modrá znamená, že proxy je spustený, ale aktuálne ho nikto nevyužíva.
+Svetlo modrá znamená, že Váš proxy je práve teraz niekým využívaný. Výborne!
+Nepracujúci: ak je Váš status šedý alebo čierny, vyskytol sa problém a proxy nie je spustený.
+Šedá znamená, že sa vypol sám. Vyskúšajte reštartovať Váš prehliadač. Ak problém pretrváva, zrejme nebudete schopný na Vašom počítači Cupcake používať.
+Čierna znamená, že došlo k internej chybe a proxy už nie je spustený. Vyskúšajte reštartovať Váš prehliadač.
+Možnosti
+Na zmenu Vašich nastavení, prosíme navštívte stránku Možnosti
+Zásluhy
+O programe
+Vytvorené užívateľom Griffin, ktorý s projektom Tor nemá nič spoločné. 
+Má rád mačky.
+ Ohľadom tohto doplnku navštívte Github.
+Pozrite sa tiež na projekt Flash Proxy v Stanforde! Ich kód toto všetko umožnil.

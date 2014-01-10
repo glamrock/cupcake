@@ -1,0 +1,17 @@
+Cupcake
+Statut :
+Ce que votre statut signifie
+En fonctionnement : si votre statut est bleu clair ou bleu foncé, votre proxy fonctionne.
+Bleu foncé signifie que le proxy fonctionne mais personne ne l'utilise en ce moment.
+Bleu clair signife que quelqu'un utilise votre proxy en ce moment. Chouette !
+Hors service : si votre statut est gris ou noir, il y a eu un problème et votre proxy ne fonctionne pas.
+Gris signifie que le  badge s'est autodésactivé. Essayez de relancer votre navigateur. Si le problème persiste, l'utilisation de Cupcake avec cet ordinateur pourrait ne pas être possible.
+Noir signifie qu'il y a eu une erreur interne et que le proxy ne fonctionne plus. Essayez de relancer votre navigateur.
+Options
+Pour changer vos options, veuillez visiter la page des options
+Crédits
+À propos
+Créé par Griffin, qui n'est affilié avec le Projet Tor en aucune façon. 
+Il aime les chats.
+Récupérer cette extension sur github.
+Consultez le projet de Flash Proxy de Stanford ! Leur code rend cela possible.
