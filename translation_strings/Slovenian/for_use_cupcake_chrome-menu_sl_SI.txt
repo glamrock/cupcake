@@ -1,0 +1,17 @@
+Cupcake
+Stanje:
+Kaj vaše stanje pomeni
+Deluje: če je vaše stanje svetlo modre ali temno modre barve, pomeni, da vaš posredovalni strežnik deluje. 
+Temno modra barva pomeni, da posredniški strežnik deluje, a ga nihče trenutno ne uporablja.
+Svetlo modra pomeni, da nekdo uporablja vaš posredovalni strežnik. Krasno!
+Ne deluje: če je vaše stanje sivo ali črno, je prišlo do težave in vaš posredniški strežnik ne deluje.
+Siva pomeni, da se je dodatek onemogočil. Poizkusite ponovno zagnati brskalnik. Če se problem še naprej ponavlja, morda Cupcakea ne boste mogli uporabljati na tem računalniku. 
+Črna pomeni, da je prišlo do notranje napake ter, da je posredniški strežnik zaustavljen. Poizkusite ponovno zagnati vaš brskalnik.
+Možnosti
+Če želite spremeniti vaše možnosti, obiščite stran z možnostmi
+Zasluge
+O programu
+Naredil Griffin, ki ni na noben način povezan s Tor Projectom. 
+On ima rad muce.
+Uporabljaj svojo spremenjeno kopijo tega dodatka na githubu.
+Oglejte si še Stanfordov projekt bliskovitega posredniškega strežnika. Njihova koda je omogočila ta projekt.

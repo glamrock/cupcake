@@ -6,35 +6,31 @@ body {
     margin: 10;
     padding: 0;
 	color: #d6e5e4;
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 13px;
+	font-family: Verdana, Helvetica,, sans-serif;
+	font-size: 13px;;
 	line-height: 1.5em; 
-	background-color: #E37D92;
+	background-color: #1a1a1a;
 	background-repeat: no-repeat;
 	background: url(images/bg.png)
 }
 
 a, a:link { 
-	color: #ffffff; 
+	color: #E37D92; 
 	font-weight: normal; 
     text-decoration: none; 
-    border-bottom:1px dotted; 
+    border-bottom:1px dotted #ffffff; 
 }
 
 a:visited {
-    color: #F7F7F7;
+    color: #b9939e;
 }
 
-p { 
-	margin: 0 0 10px 0; 
-	padding: 0; 
-}
+p { margin: 0 0 10px 0; padding: 0; }
 
-.white {color:#ffffff; font-size: 14px}
+h1, h2, h3, h4, h5, h6 { color: #000; font-weight: normal;  font-family: Verdana, Helvetica, sans-serif; }
 
-em { color: #fff; }
+h1 { font-size: 34px; margin: 0 0 20px; padding: 5px 0; }
 
-h1, h2, h3, h4, h5, h6 { color: #000; font-weight: normal;  font-family: Georgia, "Times New Roman", Times, serif }
-h1 { font-size: 34px; margin: 0 0 20px; padding: 5px 0 }
 h2 { font-size: 28px; margin: 0 0 15px; padding: 5px 0; }
+
 h3 { font-size: 22px; margin: 0 0 10px; padding: 0; }

@@ -1,0 +1,28 @@
+Internetová sloboda
+Cenzúra
+Sloboda slova
+Funguje to!
+Funguje
+Nefunguje
+Niečo je zle
+Prosíme skontrolujte si svoje nastavenia.
+Čítať viac
+Výskum
+Ak problém pretrváva, nie ste schopný používať Cupcake.
+Ďakujeme Vám!
+Zmeniť Vaše nastavenia
+Pauza
+Štart
+Reštart
+Stop
+(Pri ďalšom otvorení prehliadača sa Cupcake reštartuje).
+Uložiť zmeny
+Za deň
+Dní
+(Počet ľudí, ktorí sú momentálne pripojení)
+Pripojených užívateľov
+Prepravených dát
+v posledných tridsiatich dňoch
+Od inštalácie
+Možnosti
+Cupcake

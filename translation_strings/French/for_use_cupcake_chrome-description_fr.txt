@@ -1,0 +1,9 @@
+Cupcake aide les personnes censurées à accéder au web grâce au logiciel Tor, en créant des ponts au service des utilisateurs les plus censurés d'Internet.
+
+Si vous êtes censuré, veuillez installer le Paquet Navigateur Tor complet. Cupcake ne peut pas contourner la censure tout seul !
+
+Le Projet Tor aide les gens à vaincre la censure. Si vous ne connaissez pas Tor, veuillez vous documenter avant d'installer Cupcake. Plus d'infos : https://torproject.org
+
+Mais cela signifie que vous n'avez pas à exécuter la suite logicielle Tor au complet si vous voulez seulement créer des ponts. C'est aussi la seule façon (actuellement) de créer un pont Tor si vous êtes un utilisateur de Chrome OS.
+
+Pour plus d'informations sur la science du flash proxy, consultez le travail de David Fifield à Stanford : https://crypto.stanford.edu/flashproxy

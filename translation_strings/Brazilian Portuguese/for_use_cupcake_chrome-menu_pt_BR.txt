@@ -1,0 +1,17 @@
+Cupcake
+Status:
+O que significa o seu status
+Funcionando: se o seu estado é azul claro ou azul escuro, o seu proxy está funcionando.
+Azul escuro significa que o proxy está funcionando, mas ninguém está usando agora.
+Luz azul clara significa que alguém está usando o seu proxy agora. Muito bom!
+Não está funcionando: se o seu estado é cinza ou preto, houve um problema e o seu proxy não está funcionando.
+Cinza significa que o programa desativou. Tente reiniciar o seu navegador. Se o problema persistir, pode ser que o programa Cupcake não está funcionando neste computador.
+Preto significa que houve um erro interno e o proxy não está mais funcionando. Tente reiniciar o seu navegador.
+Opções
+Para mudar as suas opções, visite a página de opções
+Créditos
+A respeito do...
+Feita pelo Griffin, que não é afiliado de nenhuma forma com o Projeto Tor. 
+Ele gosta de gatos.
+Fork esta extensão no github.
+Confira o projeto Proxy do Flash na Stanford! Foi o seu código que tornou este projeto possível.

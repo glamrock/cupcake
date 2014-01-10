@@ -1,0 +1,17 @@
+Cupcake
+状态：
+状态的含义
+工作中：浅蓝色或者深蓝色的状态意味着代理正在运行中。
+深蓝色意味着代理正在运行中，不过现在没有人在使用。
+浅蓝色的状态意味着正有用户在使用您的代理。
+没有运行：如果状态是灰色或者黑色，这说明代理没有正常工作。
+Gray means that the badge has disabled itself. Try restarting your browser. If the problem persists, you might not be able to use Cupcake with this computer.
+黑色意味着代理由于内部错误而无法正常运行，请尝试重启浏览器。
+选项
+请到选项页面修改设置
+制作组
+关于
+Made by Griffin, who is not affiliated with the Tor Project in any way. 
+他十分喜爱萌猫~
+在 Github 上复刻此扩展。
+Check out the Flash Proxy project at Stanford! Their code made this possible.
