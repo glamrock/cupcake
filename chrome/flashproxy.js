@@ -1003,15 +1003,13 @@ function Badge() {
     table.appendChild(tr);
     td = document.createElement("td");
     tr.appendChild(td);
-    a = document.createElement("a");
-    a.setAttribute("href", "options.html");
-    a.setAttribute("target", "_blank");
-    td.appendChild(a);
+    span = document.createElement("span");
+    td.appendChild(span);
     img = document.createElement("img");
     var localization = get_badge_localization(get_langs());
     img.setAttribute("src", localization.filename);
     img.setAttribute("alt", localization.text);
-    a.appendChild(img);
+    span.appendChild(img);
 
     this.elem = table;
     this.elem.className = "idle";
