@@ -471,14 +471,14 @@ function make_websocket(addr) {
 }
 
 /*
-* A FlashProxy. 
+* A FlashProxy.
 *
 * start() starts the FlashProxy.
 *
 * The following event listeners can be set to zero-argument functions:
 * 'on_proxy_start' is called each time a proxy pair is succesfully started.
 * 'on_proxy_end'   is called only when the total number of proxy pairs returns
-*                    to zero. Note: If proxies were ended due to FlashProxy 
+*                    to zero. Note: If proxies were ended due to FlashProxy
 *                    becoming disabled, this is not called.
 * 'on_disable'     is called once upon disable.
 * 'on_die'         is called once upon die.
@@ -496,10 +496,9 @@ function FlashProxy() {
         this.badge_elem.setAttribute("id", "flashproxy-badge");
 
     this.proxy_pairs = [];
-    this.is_disabled = false;
-    this.on_proxy_start = this.on_proxy_end = 
+    this.status = FlashProxy.Status.IDLE;
+    this.on_proxy_start = this.on_proxy_end =
         this.on_disable = this.on_die = function() {};
-
 
     this.start = function() {
         var client_addr;
@@ -689,16 +688,20 @@ function FlashProxy() {
             puts("Complete.");
             /* Delete from the list of active proxy pairs. */
             this.proxy_pairs.splice(this.proxy_pairs.indexOf(proxy_pair), 1);
+
             // Check if disabled, otherwise badge.proxy_end() could
-            // occur after badge.disable() during this proxy_pair callback,
-            // resulting in the wrong color.
-            if (!this.is_disabled && this.badge)
-                this.badge.proxy_end();
+            // occur after badge.disable(), since disable() closes all
+            // proxy pairs and this is the close() callback,
+            // resulting in the wrong badge color.
+            if (this.status != FlashProxy.Status.DISABLED) {
+                if (this.badge)
+                    this.badge.proxy_end();
 
-            if (!this.is_disabled && this.proxy_pairs.length <= 0) {
-                this.on_proxy_end();
+                if (this.proxy_pairs.length <= 0) {
+                    this.status = FlashProxy.Status.IDLE;
+                    this.on_proxy_end();
+                }
             }
-
         }.bind(this);
         try {
             proxy_pair.connect();
@@ -710,6 +713,7 @@ function FlashProxy() {
 
         if (this.badge)
             this.badge.proxy_begin();
+        this.status = FlashProxy.Status.ACTIVE;
         this.on_proxy_start();
     };
 
@@ -724,6 +728,7 @@ function FlashProxy() {
             this.proxy_pairs.pop().close();
         if (this.badge)
             this.badge.disable();
+        this.status = FlashProxy.Status.DISABLED;
         this.on_disable();
     };
 
@@ -731,9 +736,17 @@ function FlashProxy() {
         puts("Dying.");
         if (this.badge)
             this.badge.die();
+        this.status = FlashProxy.Status.DEAD;
         this.on_die();
     };
 }
+
+FlashProxy.Status = {
+    IDLE: 0,
+    ACTIVE: 1,
+    DISABLED: 2,
+    DEAD: 3
+};
 
 /* An instance of a client-relay connection. */
 function ProxyPair(client_addr, relay_addr, rate_limit) {
@@ -944,12 +957,13 @@ function escape_html(s) {
 }
 
 var LOCALIZATIONS = {
-    "en": { filename: "badge-en.png", text: "Internet Freedom" },
-    "de": { filename: "badge-de.png", text: "Internetfreiheit" },
-    "pt": { filename: "badge-pt.png", text: "Internet Livre" },
-    "ru": { filename: "badge-ru.png", text: "Свобода Интернета" }
+    "en": { filename: "images/badge-en.png", text: "Internet Freedom" },
+    "de": { filename: "images/badge-de.png", text: "Internetfreiheit" },
+    "pt": { filename: "images/badge-pt.png", text: "Internet Livre" },
+    "ru": { filename: "images/badge-ru.png", text: "Свобода Интернета" }
 };
-var DEFAULT_LOCALIZATION = { filename: "badge.png", text: "Internet Freedom" };
+var DEFAULT_LOCALIZATION = { filename: "images/badge.png", text: "Internet Freedom" };
+
 /* Return an array of progressively less specific language tags, canonicalized
    for lookup in LOCALIZATIONS. */
 function lang_keys(code) {
