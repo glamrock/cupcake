@@ -17,4 +17,7 @@ fp.on_die = function() {
     chrome.browserAction.setIcon({ "path": "images/dead_icon.png"});
 };
 
+if (flashproxy_should_disable())
+    fp.disable();
+
 fp.start();

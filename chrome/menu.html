@@ -3,26 +3,23 @@
   <head>
     <title>Cupcake</title>
     <link rel=stylesheet href="style.css" type="text/css">
+    <script type="text/javascript" src="menu.js"></script>
     <script type="text/javascript" src="json2.js"></script>
     <script type="text/javascript" src="l10n.js"></script>
     <script type="text/javascript" src="localizations.js"></script>
-    <script type="text/javascript" src="menu.js"></script>
   </head>
   <body>
-    <h2 id="status">Status: <div id="badge"></div></h2>
-    
+    <h2 id="status">Status: </h2><div id="badge-container"></div>
+
     <h3 id="statusmeans">What your status means</h3>
      <p id="running"><strong>Working</strong>: if your status is light blue or dark blue, your proxy is running.</p>
      <p id="darkblue"><img src="images/badge.png" style="background-color: #227"> Dark blue means the proxy is running but no one is using it right now.</p>
      <p id="lightblue"><img src="images/badge.png" style="background-color: #28f"> Light blue means someone is using your proxy right now. Neat!</p>
-     
+
      <p id="notworking"><strong>Not working:</strong> if your status is grey or black, there was a problem and your proxy is not running.</p>
      <p id="grey"><img src="images/badge.png" style="background-color: #777"> Grey means that the badge has disabled itself. Try restarting your browser. If the problem persists, you might not be able to use Cupcake with this computer.</p>
      <p id="black"><img src="images/badge.png" style="background-color: #111"> Black means that there was an internal error and the proxy is no longer running. Try restarting your browser.</p>
 
-    <h3 id="options">Options</h3>
-    <p id="changeoptions">To change your options, please visit <a href="http://crypto.stanford.edu/flashproxy/options.html" target="blank">the options page</a>.</p>
-    
     <h3 id="credits">Credits</h3>
     <p id="griffin">Made by <a href="https://twitter.com/abditum" target="blank">Griffin</a>, who is not affiliated with <a href="https://torproject.org" target="blank">the Tor Project</a> in any way. He likes cats.</p>
 
