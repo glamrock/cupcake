@@ -473,10 +473,8 @@ function make_websocket(addr) {
 /*
 * A FlashProxy.
 *
-* start() starts the FlashProxy.
-*
 * The following event listeners can be set to zero-argument functions:
-* 'on_proxy_start' is called each time a proxy pair is succesfully started.
+* 'on_proxy_start' is called each time a proxy pair is successfully started.
 * 'on_proxy_end'   is called only when the total number of proxy pairs returns
 *                    to zero. Note: If proxies were ended due to FlashProxy
 *                    becoming disabled, this is not called.
@@ -689,18 +687,8 @@ function FlashProxy() {
             /* Delete from the list of active proxy pairs. */
             this.proxy_pairs.splice(this.proxy_pairs.indexOf(proxy_pair), 1);
 
-            // Check if disabled, otherwise badge.proxy_end() could
-            // occur after badge.disable(), since disable() closes all
-            // proxy pairs and this is the close() callback,
-            // resulting in the wrong badge color.
             if (this.status != FlashProxy.Status.DISABLED) {
-                if (this.badge)
-                    this.badge.proxy_end();
-
-                if (this.proxy_pairs.length <= 0) {
-                    this.status = FlashProxy.Status.IDLE;
-                    this.on_proxy_end();
-                }
+                this.update_status(FlashProxy.Status.IDLE);
             }
         }.bind(this);
         try {
@@ -711,10 +699,7 @@ function FlashProxy() {
             return;
         }
 
-        if (this.badge)
-            this.badge.proxy_begin();
-        this.status = FlashProxy.Status.ACTIVE;
-        this.on_proxy_start();
+        this.update_status(FlashProxy.Status.ACTIVE);
     };
 
     /* Cease all network operations and prevent any future ones. */
@@ -726,18 +711,46 @@ function FlashProxy() {
         this.is_disabled = true;
         while (this.proxy_pairs.length > 0)
             this.proxy_pairs.pop().close();
-        if (this.badge)
-            this.badge.disable();
-        this.status = FlashProxy.Status.DISABLED;
-        this.on_disable();
+
+        this.update_status(FlashProxy.Status.DISABLED);
     };
 
     this.die = function() {
         puts("Dying.");
-        if (this.badge)
-            this.badge.die();
-        this.status = FlashProxy.Status.DEAD;
-        this.on_die();
+        this.update_status(FlashProxy.Status.DEAD);
+    };
+
+    this.update_status = function(new_status) {
+        this.status = new_status;
+
+        switch (new_status) {
+            case FlashProxy.Status.IDLE:
+                if (this.badge)
+                    this.badge.proxy_end();
+
+                if (this.proxy_pairs.length <= 0) {
+                    this.status = FlashProxy.Status.IDLE;
+                    this.on_proxy_end();
+                }
+                break;
+            case FlashProxy.Status.ACTIVE:
+                if (this.badge)
+                    this.badge.proxy_begin();
+                this.on_proxy_start();
+                break;
+            case FlashProxy.Status.DISABLED:
+                if (this.badge)
+                    this.badge.disable();
+                this.on_disable();
+                break;
+            case FlashProxy.Status.DEAD:
+                if (this.badge)
+                    this.badge.die();
+                this.on_die();
+                break;
+            default:
+                throw "Invalid status ID: " + new_status;
+        }
     };
 }
 
