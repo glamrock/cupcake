@@ -1,11 +1,10 @@
 {
   "name": "Cupcake",
-  "version": "0.99",
+  "version": "1.1",
   "manifest_version": 2,
   "description": "Flash Proxy for Chrome",
   "background": { "scripts": ["flashproxy.js", "background.js"]},
   "icons": {
-    "19" : "images/cupcake19.png",
     "24" : "images/cupcake24.png",
     "38" : "images/cupcake48.png",
     "48" : "images/cupcake48.png",
