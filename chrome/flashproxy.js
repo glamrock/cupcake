@@ -103,6 +103,8 @@ if (HEADLESS) {
 
 function puts(s) {
     if (DEBUG) {
+        s = new Date().toISOString() + " | " + s;
+
         /* This shows up in the Web Console in Firefox and F12 developer tools
            in Internet Explorer. */
         (console.debug || console.log).call(console, s);
@@ -427,8 +429,8 @@ function format_addr(addr) {
    assumed that the client and relay endpoints always support binary frames. */
 function have_websocket_binary_frames() {
     var BROWSERS = [
-        { idString: "Chrome",  verString: "Chrome",  version: 16 },
-        { idString: "Safari",  verString: "Version", version: 6 },
+        { idString: "Chrome", verString: "Chrome", version: 16 },
+        { idString: "Safari", verString: "Version", version: 6 },
         { idString: "Firefox", verString: "Firefox", version: 11 }
     ];
     var ua;
@@ -682,8 +684,7 @@ function FlashProxy() {
 
         proxy_pair = new ProxyPair(client_addr, relay_addr, this.rate_limit);
         this.proxy_pairs.push(proxy_pair);
-        proxy_pair.complete_callback = function(event) {
-            puts("Complete.");
+        proxy_pair.cleanup_callback = function(event) {
             /* Delete from the list of active proxy pairs. */
             this.proxy_pairs.splice(this.proxy_pairs.indexOf(proxy_pair), 1);
 
@@ -766,6 +767,9 @@ function ProxyPair(client_addr, relay_addr, rate_limit) {
     var MAX_BUFFER = 10 * 1024 * 1024;
 
     function log(s) {
+        if (!SAFE_LOGGING) {
+            s = format_addr(client_addr) + '|' + format_addr(relay_addr) + ' : ' + s
+        }
         puts(s)
     }
 
@@ -780,7 +784,7 @@ function ProxyPair(client_addr, relay_addr, rate_limit) {
     this.flush_timeout_id = null;
 
     /* This callback function can be overridden by external callers. */
-    this.complete_callback = function() {
+    this.cleanup_callback = function() {
     };
 
     this.connect = function() {
@@ -816,15 +820,23 @@ function ProxyPair(client_addr, relay_addr, rate_limit) {
         log(ws.label + ": connected.");
     }.bind(this);
 
+    this.maybe_cleanup = function() {
+        if (this.running && is_closed(this.client_s) && is_closed(this.relay_s)) {
+            this.running = false;
+            this.cleanup_callback();
+            return true;
+        }
+        return false;
+    }
+
     this.onclose_callback = function(event) {
         var ws = event.target;
 
         log(ws.label + ": closed.");
         this.flush();
 
-        if (this.running && is_closed(this.client_s) && is_closed(this.relay_s)) {
-            this.running = false;
-            this.complete_callback();
+        if (this.maybe_cleanup()) {
+            puts("Complete.");
         }
     }.bind(this);
 
@@ -833,6 +845,11 @@ function ProxyPair(client_addr, relay_addr, rate_limit) {
 
         log(ws.label + ": error.");
         this.close();
+
+        // we can't rely on onclose_callback to cleanup, since one common error
+        // case is when the client fails to connect and the relay never starts.
+        // in that case close() is a NOP and onclose_callback is never called.
+        this.maybe_cleanup();
     }.bind(this);
 
     this.onmessage_client_to_relay = function(event) {
