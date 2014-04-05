@@ -14,7 +14,7 @@ fp.on_disable = function() {
 };
 
 fp.on_die = function() {
-    chrome.browserAction.setIcon({ "path": "images/dead_icon2.png"});
+    chrome.browserAction.setIcon({ "path": "images/cupcake48.png"});
 };
 
 if (flashproxy_should_disable())
