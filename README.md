@@ -77,6 +77,9 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 - *permissions:background* is used so that the extension will notify of updates and display the post-installation page. Also used so that Cupcake will start/run on startup, before the browser is started (Windows only).
 - *permissions:cookies* allows reading/writing of cookies, but may not be necessary, since Cupcake doesn't currently use the Cookies API.  
 
+### Financial
+Much of the Cupcake Bridge projects are self-funded by @glamrock, but the Chrome and Firefox extensions are covered under a generous grant from the Open Tech Fund.
+
 ### License
 My software is free to use, free to give to friends, & open-source, so everyone can make sure it's safe for people to use. Want to make changes? Go for it! :dog:
 
