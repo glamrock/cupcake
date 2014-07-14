@@ -3,7 +3,7 @@
        xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <Description about="urn:mozilla:install-manifest">
-    <em:id>griffinboyce@gmail.com</em:id>
+    <em:id>griffin@cryptolab.net</em:id>
     <em:version>1.0</em:version>
     <em:type>2</em:type>
 
@@ -11,14 +11,14 @@
       <Description>
         <em:id>{21dd6cc1-4de4-4049-b689-efe24a4aa79f}</em:id>
         <em:minVersion>4</em:minVersion>
-        <em:maxVersion>18</em:maxVersion>
+        <em:maxVersion>40</em:maxVersion>
       </Description>
     </em:targetApplication>
 
     <!-- Front End MetaData -->
     <em:name>Cupcake</em:name>
-    <em:description>Become a Tor bridge easily</em:description>
+    <em:description>Become a flashproxy bridge and contribute to the Tor network</em:description>
     <em:creator>Griffin Boyce</em:creator>
-    <em:homepageURL>http://www.cryptic.be/</em:homepageURL>
+    <em:homepageURL>http://cupcakebridge.com/</em:homepageURL>
   </Description>
 </RDF>
