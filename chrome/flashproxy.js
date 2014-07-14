@@ -64,7 +64,11 @@
 
 var DEFAULT_FACILITATOR_URL = DEFAULT_FACILITATOR_URL || "https://fp-facilitator.org/";
 
-var DEFAULT_MAX_NUM_PROXY_PAIRS = DEFAULT_MAX_NUM_PROXY_PAIRS || 10;
+/* Start two connections because some versions of Tor make two PT connections:
+https://lists.torproject.org/pipermail/tor-dev/2012-December/004221.html
+https://trac.torproject.org/projects/tor/ticket/7733 */
+var CONNECTIONS_PER_CLIENT = 2
+var DEFAULT_MAX_NUM_CLIENTS = DEFAULT_MAX_NUM_CLIENTS || 10;
 
 var DEFAULT_INITIAL_FACILITATOR_POLL_INTERVAL = DEFAULT_INITIAL_FACILITATOR_POLL_INTERVAL || 5.0;
 var DEFAULT_FACILITATOR_POLL_INTERVAL = DEFAULT_FACILITATOR_POLL_INTERVAL || 3600.0;
@@ -507,8 +511,8 @@ function FlashProxy() {
 
         this.fac_url = get_param_string(query, "facilitator", DEFAULT_FACILITATOR_URL);
 
-        this.max_num_proxy_pairs = get_param_integer(query, "max_clients", DEFAULT_MAX_NUM_PROXY_PAIRS);
-        if (this.max_num_proxy_pairs === null || this.max_num_proxy_pairs < 0) {
+        this.max_num_clients = get_param_integer(query, "max_clients", DEFAULT_MAX_NUM_CLIENTS);
+        if (this.max_num_clients === null || this.max_num_clients < 0) {
             puts("Error: max_clients must be a nonnegative integer.");
             this.die();
             return;
@@ -576,7 +580,7 @@ function FlashProxy() {
         var base_url, url;
         var xhr;
 
-        if (this.proxy_pairs.length >= this.max_num_proxy_pairs) {
+        if (this.proxy_pairs.length >= this.max_num_clients * CONNECTIONS_PER_CLIENT) {
             setTimeout(this.proxy_main.bind(this), this.facilitator_poll_interval * 1000);
             return;
         }
@@ -671,12 +675,9 @@ function FlashProxy() {
     };
 
     this.begin_proxy = function(client_addr, relay_addr) {
-        /* Start two proxy connections because of some versions of Tor making
-           two pt connections:
-           https://lists.torproject.org/pipermail/tor-dev/2012-December/004221.html
-           https://trac.torproject.org/projects/tor/ticket/7733 */
-        this.make_proxy_pair(client_addr, relay_addr);
-        this.make_proxy_pair(client_addr, relay_addr);
+        for (var i=0; i<CONNECTIONS_PER_CLIENT; i++) {
+            this.make_proxy_pair(client_addr, relay_addr);
+        }
     };
 
     this.make_proxy_pair = function(client_addr, relay_addr) {
@@ -1102,6 +1103,7 @@ function safe_repr(s) {
 var TBB_UAS = [
     "Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0",
     "Mozilla/5.0 (Windows NT 6.1; rv:17.0) Gecko/20100101 Firefox/17.0",
+    "Mozilla/5.0 (Windows NT 6.1; rv:24.0) Gecko/20100101 Firefox/24.0",
 ];
 function is_likely_tor_browser() {
     return TBB_UAS.indexOf(window.navigator.userAgent) > -1
