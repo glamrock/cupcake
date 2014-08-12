@@ -1,4 +1,4 @@
-Copyright (c) 2013, Griffin Boyce <griffinboyce@gmail.com>
+Copyright (c) 2013-2014, Griffin Boyce <griffinboyce@gmail.com>
 All rights reserved.
 
 NOTE: Any code reused has its own license included in its folder or file itself.
