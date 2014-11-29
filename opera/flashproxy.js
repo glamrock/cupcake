@@ -604,7 +604,6 @@ function FlashProxy() {
                like "Component returned failure code: 0x805e0006
                [nsIXMLHttpRequest.open]" on Firefox. */
             puts("Facilitator: exception while connecting: " + repr(err.message) + ".");
-            this.die();
             return;
         }
         xhr.responseType = "text";
@@ -614,7 +613,6 @@ function FlashProxy() {
                     this.fac_complete(xhr.responseText);
                 } else {
                     puts("Facilitator: can't connect: got status " + repr(xhr.status) + " and status text " + repr(xhr.statusText) + ".");
-                    this.die();
                 }
             }
         }.bind(this);
@@ -698,7 +696,6 @@ function FlashProxy() {
             proxy_pair.connect();
         } catch (err) {
             puts("ProxyPair: exception while connecting: " + safe_repr(err.message) + ".");
-            this.die();
             return;
         }
 
@@ -757,6 +754,7 @@ function FlashProxy() {
     };
 }
 
+# this is only useful for Cupcake, since it affects Cupcake status
 FlashProxy.Status = {
     IDLE: 0,
     ACTIVE: 1,
@@ -989,13 +987,12 @@ function escape_html(s) {
 }
 
 var LOCALIZATIONS = {
-    "en": { filename: "images/badge-en.png", text: "Internet Freedom" },
-    "de": { filename: "images/badge-de.png", text: "Internetfreiheit" },
-    "pt": { filename: "images/badge-pt.png", text: "Internet Livre" },
-    "ru": { filename: "images/badge-ru.png", text: "Свобода Интернета" }
+    "en": { filename: "badge-en.png", text: "Internet Freedom" },
+    "de": { filename: "badge-de.png", text: "Internetfreiheit" },
+    "pt": { filename: "badge-pt.png", text: "Internet Livre" },
+    "ru": { filename: "badge-ru.png", text: "Свобода Интернета" }
 };
-var DEFAULT_LOCALIZATION = { filename: "images/badge.png", text: "Internet Freedom" };
-
+var DEFAULT_LOCALIZATION = { filename: "badge.png", text: "Internet Freedom" };
 /* Return an array of progressively less specific language tags, canonicalized
    for lookup in LOCALIZATIONS. */
 function lang_keys(code) {
@@ -1099,17 +1096,7 @@ function safe_repr(s) {
     return SAFE_LOGGING ? "[scrubbed]" : repr(s);
 }
 
-/* Do we seem to be running in Tor Browser? Check the user-agent string and for
-   no listing of supported MIME types. */
-var TBB_UAS = [
-    "Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0",
-    "Mozilla/5.0 (Windows NT 6.1; rv:17.0) Gecko/20100101 Firefox/17.0",
-    "Mozilla/5.0 (Windows NT 6.1; rv:24.0) Gecko/20100101 Firefox/24.0",
-];
-function is_likely_tor_browser() {
-    return TBB_UAS.indexOf(window.navigator.userAgent) > -1
-        && (window.navigator.mimeTypes && window.navigator.mimeTypes.length === 0);
-}
+/* Removed Tor Browser check, but left in mobile check */
 
 /* Are circumstances such that we should self-disable and not be a
    proxy? We take a best-effort guess as to whether this device runs on
@@ -1123,17 +1110,13 @@ function flashproxy_should_disable() {
     var ua;
 
     /* https://trac.torproject.org/projects/tor/ticket/6293 */
-    if (is_likely_tor_browser()) {
-         puts("Disable because running in Tor Browser.");
-         return true;
-    }
 
     ua = window.navigator.userAgent;
     if (ua) {
         var UA_LIST = [
             /\bmobile\b/i,
             /\bandroid\b/i,
-            /\bopera mobi\b/i,
+            /\bopera mobi\b/i
         ];
 
         for (var i = 0; i < UA_LIST.length; i++) {
