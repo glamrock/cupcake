@@ -1,7 +1,7 @@
 var fp = new FlashProxy();
 
 fp.on_proxy_start = function() {
-    chrome.browserAction.setIcon({ "path": "images/active_icon2.png"});
+    chrome.browserAction.setIcon({ "path": "images/active_icon.png"});
 };
 
 fp.on_proxy_end = function() {
@@ -10,7 +10,7 @@ fp.on_proxy_end = function() {
 };
 
 fp.on_disable = function() {
-    chrome.browserAction.setIcon({ "path": "images/disabled_icon2.png"});
+    chrome.browserAction.setIcon({ "path": "images/disabled_icon.png"});
 };
 
 fp.on_die = function() {
