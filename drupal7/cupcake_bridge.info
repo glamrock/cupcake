@@ -1,0 +1,5 @@
+name = Cupcake Bridge
+package = "Cupcake Bridge"
+description = "Custom blocks and features"
+core = 7.x
+version = "7.x-0.0"

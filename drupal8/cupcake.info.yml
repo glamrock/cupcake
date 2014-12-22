@@ -1,9 +1,0 @@
-name: Cupcake for Drupal 8
-description: Adds a Flash Proxy div to the footer of every page.
-package: Custom
-type: module
-version: 1.0
-core: 8.x
-dependencies:
-  - node
-  - block
