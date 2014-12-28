@@ -32,34 +32,29 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 
 ##Complete
 * Chrome - [download on google](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) or [github](https://github.com/glamrock/cupcake/blob/master/downloads/chrome.crx)
+* Opera 26 (works on v15+)
 * Wordpress
 * Facebook App (html5/css3/javascript)
 * Flex shim
+* Drupal 7+ module
 
 ##Beta
 * Drupal 6 module
 * Flex shim for Flash games
 
 ##Next
-* Better UX for Wordpress and Drupal plugins
 * Translation - [Help Out!](https://www.transifex.com/projects/p/cupcake/)
 * Firefox add-on
-* Metrics (with the idea of pushing this functionality upstream to Flashproxy.js)
 
 ##Roadmap
-* Wordpress Theme
 * Tumblr Theme (#2)
-* Drupal 7 & 5 modules
-* Safari
 * Flash/SWF App Shim (actionscript & html)
 
 ##High-priority tasks that are difficult to fix
 * Enabling wordpress.COM users to add flashproxy to their theme. (Can you help with this? Send me an email! griffin @ cryptolab.net )
 
 ##Low-priority tasks that demand a lot of time
-* Opera 12 extension
 * RefineryCMS add-on
-* Opera 15 add-on
 * Joomla Extension
 
 ##Failed experiments
