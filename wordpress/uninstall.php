@@ -11,9 +11,9 @@
 
 // If uninstall not called from WordPress, then exit.
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
-	exit;
+    exit;
 }
 
 if ( get_option( 'wp_cupcake_bridge_iframe_display' ) != false ) {
-	delete_option('wp_cupcake_bridge_iframe_display');
+    delete_option('wp_cupcake_bridge_iframe_display');
 }

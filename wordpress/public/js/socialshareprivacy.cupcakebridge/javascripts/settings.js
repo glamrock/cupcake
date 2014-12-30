@@ -11,13 +11,13 @@
 
 // load global settings
 jQuery(document).ready(function ($) {
-	"use strict";
+    "use strict";
 
-	$('script[type="application/x-social-share-privacy-settings"]').each(function () {
-		var settings = (new Function('return ('+(this.textContent||this.innerText||this.text)+');')).call(this);
+    $('script[type="application/x-social-share-privacy-settings"]').each(function () {
+        var settings = (new Function('return ('+(this.textContent||this.innerText||this.text)+');')).call(this);
 
-		if (typeof settings === "object") {
-			$.extend(true, $.fn.socialSharePrivacy.settings, settings);
-		}
-	});
+        if (typeof settings === "object") {
+            $.extend(true, $.fn.socialSharePrivacy.settings, settings);
+        }
+    });
 });
