@@ -34,8 +34,8 @@ function onActionBtnClicked(state) {
 // have any window object
 pageWorkers.Page({
   contentURL: self.data.url("flashproxy.html"),
-  contentScriptFile: [self.data.url("flashproxy.js"), self.data.url("pageworker.js")],
-  contentScriptWhen: "ready",
+  contentScriptFile: [self.data.url("commProxy.js")],
+  contentScriptWhen: "start",
   onMessage: function(message) {
     console.log("Message received: " + message);
     switch(message) {
