@@ -4,7 +4,11 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>griffin@cryptolab.net</em:id>
+<<<<<<< HEAD
     <em:version>0.5</em:version>
+=======
+    <em:version>1.0</em:version>
+>>>>>>> origin/firefox-alpha
     <em:type>2</em:type>
 
     <em:targetApplication>
@@ -17,8 +21,12 @@
 
     <!-- Front End MetaData -->
     <em:name>Cupcake</em:name>
+<<<<<<< HEAD
     <em:description>Help others gain access to the Tor network</em:description>
+=======
+    <em:description>Become a flashproxy bridge and contribute to the Tor network</em:description>
+>>>>>>> origin/firefox-alpha
     <em:creator>Griffin Boyce</em:creator>
-    <em:homepageURL>http://www.cryptic.be/</em:homepageURL>
+    <em:homepageURL>http://cupcakebridge.com/</em:homepageURL>
   </Description>
 </RDF>
