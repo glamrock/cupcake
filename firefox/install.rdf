@@ -8,7 +8,7 @@
 
     <em:targetApplication>
       <Description>
-        <em:id>{21dd6cc1-4de4-4049-b689-efe24a4aa79f}</em:id>
+        <em:id>{33720f26-fc8d-11e4-abbe-fb201d5d46b0}</em:id>
         <em:minVersion>4</em:minVersion>
         <em:maxVersion>40</em:maxVersion>
       </Description>
@@ -19,6 +19,6 @@
 
     <em:description>Become a flashproxy bridge and contribute to the Tor network</em:description>
     <em:creator>Griffin Boyce</em:creator>
-    <em:homepageURL>http://cupcakebridge.com/</em:homepageURL>
+    <em:homepageURL>https://github.com/glamrock</em:homepageURL>
   </Description>
 </RDF>
