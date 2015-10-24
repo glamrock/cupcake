@@ -754,7 +754,7 @@ function FlashProxy() {
     };
 }
 
-# this is only useful for Cupcake, since it affects Cupcake status
+/* this is only useful for Cupcake, since it affects Cupcake status. */
 FlashProxy.Status = {
     IDLE: 0,
     ACTIVE: 1,
