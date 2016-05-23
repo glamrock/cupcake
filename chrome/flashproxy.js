@@ -1096,46 +1096,18 @@ function safe_repr(s) {
     return SAFE_LOGGING ? "[scrubbed]" : repr(s);
 }
 
-/* Removed Tor Browser check, but left in mobile check */
+/* Normally, flashproxy checks whether it is running within Tor Browser or on a mobile device.
+   However, because Cupcake is a browser extension for desktop, it won't run on mobile devices anyway.
+   Disabled the Safari 6.0 check, since Cupcake is for Chrome and Firefox. I've left in the check 
+   for websocket support and cookie opt-in, just in case they've disallowed flashproxy elsewhere 
+   (this is an edge case, but whatevz).
+ */
 
-/* Are circumstances such that we should self-disable and not be a
-   proxy? We take a best-effort guess as to whether this device runs on
-   a battery or the data transfer might be expensive.
 
-   http://www.zytrax.com/tech/web/mobile_ids.html
-   http://googlewebmastercentral.blogspot.com/2011/03/mo-better-to-also-detect-mobile-user.html
-   http://search.cpan.org/~cmanley/Mobile-UserAgent-1.05/lib/Mobile/UserAgent.pm
-*/
 function flashproxy_should_disable() {
     var ua;
 
-    /* https://trac.torproject.org/projects/tor/ticket/6293 */
-
     ua = window.navigator.userAgent;
-    if (ua) {
-        var UA_LIST = [
-            /\bmobile\b/i,
-            /\bandroid\b/i,
-            /\bopera mobi\b/i
-        ];
-
-        for (var i = 0; i < UA_LIST.length; i++) {
-            var re = UA_LIST[i];
-
-            if (ua.match(re)) {
-                puts("Disable because User-Agent matches mobile pattern " + re + ".");
-                return true;
-            }
-        }
-
-        if (ua.match(/\bsafari\b/i) && !ua.match(/\bchrome\b/i)
-            && !ua.match(/\bversion\/[6789]\./i)) {
-            /* Disable before Safari 6.0 because it doesn't have the hybi/RFC type
-               of WebSockets. */
-            puts("Disable because User-Agent is Safari before 6.0.");
-            return true;
-        }
-    }
 
     if (!WebSocket) {
         /* No WebSocket support. */

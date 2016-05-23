@@ -9,20 +9,19 @@ body {
 	font-family: Verdana, Helvetica, sans-serif;
 	font-size: 14px;;
 	line-height: 1.5em;
-	background: #1a1a1a url(images/bg.jpg) top right repeat-y;
+	/*background: #1a1a1a url(images/bg.jpg) top right repeat-y;*/
+    background-image: linear-gradient(to right,#1f2632 0%,#28354d 100%);
 }
 
 strong {
     color: #E37D92;
 }
 
-
-
-a, a:link { 
-	color: #E37D92; 
-	font-weight: normal; 
-    text-decoration: none; 
-    border-bottom:1px dotted #ffffff; 
+a, a:link {
+	color: #E37D92;
+	font-weight: normal;
+    text-decoration: none;
+    border-bottom:1px dotted #ffffff;
 }
 
 a:visited {
@@ -36,7 +35,7 @@ hr {
 
 }
 
-p { margin: 0 0 10px 0; padding: 0; text-shadow: 1px 1px 1px #000; 
+p { margin: 0 0 10px 0; padding: 0; text-shadow: 1px 1px 1px #000;
 background-color: rgba(17, 9, 56, 0.06);
 
 }

@@ -4,7 +4,17 @@ Cupcake Bridge
 Cupcake Bridge helps users makes bridges automagically!
 Get the Cupcake browser extension for [Chrome](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) and [Firefox](https://addons.mozilla.org/en-us/firefox/addon/cupcakebridge/)
 
-**Contact**: Griffin Boyce, griffin @ cryptolab.net
+##Releases
+* Chrome - [download on google](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc)
+* Firefox - [download from Mozilla](https://addons.mozilla.org/en-us/firefox/addon/cupcakebridge/)
+* Opera 26 (works on v15+)
+* Wordpress
+* Facebook App (html5/css3/javascript)
+* Flex shim
+* Drupal 7+ module
+
+## Security
+In 2015, a full security audit of both Cupcake and Flashproxy was conducted by Cure53.  Both projects passed the audit with compliments.
 
 ##What even is Cupcake?
 Cupcake uses something called Flashproxy to create special Tor bridges that are harder to block. As with all circumvention projects, there's a *lot* more to it than that, but that is the jist. Flashproxy was created by David Fifield, and there is a lot of ongoing research in this area.  You can learn more at the <a href="http://crypto.stanford.edu/flashproxy">Stanford Flashproxy site</a>.  Cupcake exists as an easy way to distribute Flashproxy, with the goal of getting as many people to become bridges as possible.
@@ -12,8 +22,6 @@ Cupcake uses something called Flashproxy to create special Tor bridges that are 
 Cupcake can be distributed in two ways:
 * As a chrome or firefox add-on (turning your computer in to a less temporary proxy)
 * As a module/theme/app on popular web platforms (turning every visitor to your site in to a temporary proxy)
-
-
 
 ##What the frak is a Flashproxy?
 There is this thing called a Flash Proxy[[1](https://crypto.stanford.edu/flashproxy/)] - basically a code snippet that you run on sites and visitors become tor bridges temporarily.
@@ -32,17 +40,7 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 ##Oh. Well okay then. Carry on.
 [I knew you'd come around!](https://www.youtube.com/watch?v=HrlSkcHQnwI)
 
-##Releases
-* Chrome - [download on google](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc)
-* Firefox - [download from Mozilla](https://addons.mozilla.org/en-us/firefox/addon/cupcakebridge/)
-* Opera 26 (works on v15+)
-* Wordpress
-* Facebook App (html5/css3/javascript)
-* Flex shim
-* Drupal 7+ module
-
 ##How to help
-
 The easiest way to help the project is by installing one of the browser extensions.  It's not resource intensive at *all* -- flashproxy uses about as much bandwidth in a day as a 5-minute YouTube video (around 6mb).
 
 * Translation - [Help Out!](https://www.transifex.com/projects/p/cupcake/)
@@ -69,13 +67,11 @@ The easiest way to help the project is by installing one of the browser extensio
 - *permissions:background* is used so that the extension will notify of updates and display the post-installation page. Also used so that Cupcake will start/run on startup, before the browser is started (Windows only).
 - *permissions:cookies* allows reading/writing of cookies, but may not be necessary, since Cupcake doesn't currently use the Cookies API.  
 
-### Financial
-Much of the Cupcake Bridge projects are self-funded by @glamrock, but the Chrome and Firefox extensions are covered under a generous grant from the Open Tech Fund.
+### Financials
+Much of the Cupcake Bridge projects are self-funded by @glamrock, but the Chrome and Firefox extensions were covered under a generous grant from the [Open Tech Fund](https://www.opentech.fund/project/cupcake-bridge) from 2013-2014.
 
 ### License
-My software is free to use, free to give to friends, & open-source, so everyone can make sure it's safe for people to use. Want to make changes? Go for it! :dog:
-
-Cupcake uses the Revised BSD license -- see license.txt for more info.
+My software is free to use, free to give to friends, & open-source, so everyone can make sure it's safe for people to use. Want to make changes? Go for it! :dog: Cupcake uses the Revised BSD license -- see license.txt for more legal info.
 
 ### Cute dog
 ![dawww, lookit dat little tongue so cute](http://i.imgur.com/JYO9P6j.jpg)
@@ -83,3 +79,4 @@ Cupcake uses the Revised BSD license -- see license.txt for more info.
 ### References
 [1] https://crypto.stanford.edu/flashproxy/  
 [2] https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
+[3] https://gitweb.torproject.org/flashproxy.git/tree/proxy

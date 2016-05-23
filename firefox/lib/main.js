@@ -46,7 +46,7 @@ pageWorkers.Page({
         button.icon = "./images/cupcake48.png";
         break;
       case "proxy_disabled":
-        button.icon = "./images/disabled_icon2.png";
+        button.icon = "./images/disabled_icon.png";
         break;
       case "proxy_died":
         button.icon = "./images/cupcake48.png";
@@ -54,4 +54,3 @@ pageWorkers.Page({
     }
   }
 });
-

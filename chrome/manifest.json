@@ -1,6 +1,6 @@
 {
   "name": "Cupcake",
-  "version": "1.101",
+  "version": "1.2",
   "manifest_version": 2,
   "description": "Flash Proxy for Chrome",
   "background": { "scripts": ["flashproxy.js", "background.js"]},
@@ -19,7 +19,7 @@
   "permissions": [
     "http://fp-facilitator.org/*",
     "https://fp-facilitator.org/*",
-    
+
     "background",
     "cookies" ],
   "content_security_policy": "script-src 'self' 'unsafe-eval' https://*.stanford.edu/ https://*.bamsoftware.com/ https://*.fp-facilitator.org/; object-src 'self'"
