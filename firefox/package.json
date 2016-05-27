@@ -5,5 +5,5 @@
   "description": "Become a flashproxy and contribute to the Tor network.",
   "author": " Griffin Boyce <griffin@cryptolab.net>, Uzair Farooq <uzairfarooq11@gmail.com>",
   "license": "BSD",
-  "version": "1.2"
+  "version": "1.2.1"
 }
