@@ -40,13 +40,13 @@ pageWorkers.Page({
     console.log("Message received: " + message);
     switch(message) {
       case "proxy_started":
-        button.icon = "./images/active_icon2.png";
+        button.icon = "./images/active_icon.png";
         break;
       case "proxy_ended":
         button.icon = "./images/cupcake48.png";
         break;
       case "proxy_disabled":
-        button.icon = "./images/disabled_icon.png";
+        button.icon = "./images/grey_icon.png";
         break;
       case "proxy_died":
         button.icon = "./images/cupcake48.png";

@@ -2,21 +2,19 @@ body {
     width:350px;
     min-height:400px;
     overflow-x:hidden;
-    overflow-y:auto;
+    overflow-y:scroll;
     margin: 10px;
     padding: 0;
-    color: #fff;
-    font-family: Verdana, Helvetica, sans-serif;
-    font-size: 14px;;
-    line-height: 1.5em;
-    background: #1a1a1a url(images/bg.jpg) top right repeat-y;
+	color: #fff;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 14px;;
+	line-height: 1.5em;
+    background-image: linear-gradient(to right,#1f2632 0%,#28354d 100%);
 }
 
 strong {
     color: #E37D92;
 }
-
-
 
 a, a:link {
     color: #E37D92;

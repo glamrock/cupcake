@@ -9,7 +9,6 @@ body {
 	font-family: Verdana, Helvetica, sans-serif;
 	font-size: 14px;;
 	line-height: 1.5em;
-	/*background: #1a1a1a url(images/bg.jpg) top right repeat-y;*/
     background-image: linear-gradient(to right,#1f2632 0%,#28354d 100%);
 }
 
