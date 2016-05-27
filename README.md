@@ -6,7 +6,7 @@ Get the Cupcake browser extension for [Chrome](https://chrome.google.com/webstor
 
 ##Releases
 * Chrome - [download on google](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc)
-* Firefox - [download from Mozilla](https://addons.mozilla.org/en-us/firefox/addon/cupcakebridge/)
+* Firefox - [download from Mozilla](https://addons.mozilla.org/en-us/firefox/addon/cupcakebridge/) (Special thanks to [Uzair Farooq](uzairfarooq11@gmail.com) for creating the original Firefox port of Cupcake.
 * Opera 26 (works on v15+)
 * Wordpress
 * Facebook App (html5/css3/javascript)
@@ -17,7 +17,7 @@ Get the Cupcake browser extension for [Chrome](https://chrome.google.com/webstor
 In 2015, a full security audit of both Cupcake and Flashproxy was conducted by Cure53.  Both projects passed the audit with compliments.
 
 ##What even is Cupcake?
-Cupcake uses something called Flashproxy to create special Tor bridges that are harder to block. As with all circumvention projects, there's a *lot* more to it than that, but that is the jist. Flashproxy was created by David Fifield, and there is a lot of ongoing research in this area.  You can learn more at the <a href="http://crypto.stanford.edu/flashproxy">Stanford Flashproxy site</a>.  Cupcake exists as an easy way to distribute Flashproxy, with the goal of getting as many people to become bridges as possible.
+Cupcake uses something called Flashproxy to create special Tor pathways that are harder to block. As with all circumvention projects, there's a *lot* more to it than that, but that is the jist. Flashproxy was created by David Fifield, and there is a lot of ongoing research in this area.  You can learn more at the <a href="http://crypto.stanford.edu/flashproxy">Stanford Flashproxy site</a>.  Cupcake exists as an easy way to distribute Flashproxy, with the goal of getting as many people to become bridges as possible.
 
 Cupcake can be distributed in two ways:
 * As a chrome or firefox add-on (turning your computer in to a less temporary proxy)
