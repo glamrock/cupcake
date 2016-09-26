@@ -3,38 +3,77 @@ body {
     min-height:400px;
     overflow-x:hidden;
     overflow-y:scroll;
-    margin: 10;
+    margin: 10px;
     padding: 0;
-	color: #d6e5e4;
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 13px;
-	line-height: 1.5em; 
-	background-color: #E37D92;
-	background-repeat: no-repeat;
-	background: url(images/bg.png)
+	color: #fff;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 14px;;
+	line-height: 1.5em;
+    background-image: linear-gradient(to right,#1f2632 0%,#28354d 100%);
 }
 
-a, a:link { 
-	color: #ffffff; 
-	font-weight: normal; 
-    text-decoration: none; 
-    border-bottom:1px dotted; 
+strong {
+    color: #E37D92;
+}
+
+a, a:link {
+	color: #E37D92;
+	font-weight: normal;
+    text-decoration: none;
+    border-bottom:1px dotted #ffffff;
 }
 
 a:visited {
-    color: #F7F7F7;
+    color: #b9939e;
 }
 
-p { 
-	margin: 0 0 10px 0; 
-	padding: 0; 
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+
 }
 
-.white {color:#ffffff; font-size: 14px}
+p { margin: 0 0 10px 0; padding: 0; text-shadow: 1px 1px 1px #000;
+background-color: rgba(17, 9, 56, 0.06);
 
-em { color: #fff; }
+}
 
-h1, h2, h3, h4, h5, h6 { color: #000; font-weight: normal;  font-family: Georgia, "Times New Roman", Times, serif }
-h1 { font-size: 34px; margin: 0 0 20px; padding: 5px 0 }
-h2 { font-size: 28px; margin: 0 0 15px; padding: 5px 0; }
+h1, h2, h3, h4, h5, h6 { color: #E9C1EE; font-weight: normal;  font-family: Verdana, Helvetica, sans-serif; text-align: center;}
+
 h3 { font-size: 22px; margin: 0 0 10px; padding: 0; }
+
+#status {
+    float: left;
+}
+#statusmeans {
+    clear: both;
+}
+#badge-container {
+    padding: 9px 5px;
+    display: inline-block;
+}
+#flashproxy-badge {
+    border-spacing: 0px;
+}
+#flashproxy-badge.idle {
+    background-color: #227;
+}
+#flashproxy-badge.active {
+    background-color: #28f;
+}
+#flashproxy-badge.disabled {
+    background-color: #777;
+}
+#flashproxy-badge.dead {
+    background-color: #111;
+}
+#flashproxy-badge td {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+#flashproxy-badge a img {
+    border: 0;
+}
