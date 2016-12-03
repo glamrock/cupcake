@@ -14,7 +14,7 @@ Get the Cupcake browser extension for [Chrome](https://chrome.google.com/webstor
 * Drupal 7+ module
 
 ## Security
-In 2015, a full security audit of both Cupcake and Flashproxy was conducted by Cure53.  Both projects passed the audit with compliments.
+In 2015, a full security audit of both Cupcake and Flashproxy was conducted by Cure53.  Both projects passed the audit with compliments.  The full report is [available here](https://github.com/glamrock/cupcake/blob/master/security/audit1.pdf).
 
 ##What even is Cupcake?
 Cupcake uses something called Flashproxy to create special Tor pathways that are harder to block. As with all circumvention projects, there's a *lot* more to it than that, but that is the jist. Flashproxy was created by David Fifield, and there is a lot of ongoing research in this area.  You can learn more at the <a href="http://crypto.stanford.edu/flashproxy">Stanford Flashproxy site</a>.  Cupcake exists as an easy way to distribute Flashproxy, with the goal of getting as many people to become bridges as possible.
