@@ -34,7 +34,7 @@ In 2015, a full security audit of both Cupcake and Flashproxy was conducted by C
 Most of the Cupcake Bridge projects are self-funded by @glamrock, but major modifications to the first versions of Chrome and Firefox extensions were covered under a generous grant from the [Open Tech Fund](https://www.opentech.fund/project/cupcake-bridge) from 2013-2014.
 
 ### History
-Previously, Cupcake included Flashproxy rather than Snowflake.  Cupcake has existed since 2012, and Snowflake was created a couple of years after Cupcake.  Over time, it became clear that Snowflake was becoming more useful for at-risk users, so I made the switch in early 2019. The old readme is available [here](https://github.com/glamrock/cupcake/v1_readme.md).
+Previously, Cupcake included Flashproxy rather than Snowflake.  Cupcake has existed since 2012, and Snowflake was created a couple of years after Cupcake.  Over time, it became clear that Snowflake was becoming more useful for at-risk users, so I made the switch in early 2019. The old readme is available [here](https://github.com/glamrock/cupcake/blob/master/v1_readme.md).
 
 ### License
 My software is free to use, free to give to friends, & open-source, so everyone can make sure it's safe for people to use. Want to make changes? Go for it! :dog: Cupcake uses the Revised BSD license -- see license.txt for more legal info.
