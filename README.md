@@ -4,7 +4,7 @@ Cupcake Bridge
 Cupcake Bridge helps users makes bridges automagically!
 Get the Cupcake browser extension for [Chrome](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) and [Firefox](https://addons.mozilla.org/en-us/firefox/addon/cupcakebridge/)
 
-###Releases
+### Releases
 * Chrome - [download on google](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc)
 * Firefox - [download from Mozilla](https://addons.mozilla.org/en-us/firefox/addon/cupcakebridge/) (Special thanks to [Uzair Farooq](uzairfarooq11@gmail.com) for creating the original Firefox port of Cupcake.
 * Opera 26 (works on v15+)
