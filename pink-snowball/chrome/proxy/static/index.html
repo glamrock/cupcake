@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Snowflake</title>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<style>
+body {
+  text-align: center; margin: auto;
+  width: 50%;
+  min-width: 40em;
+}
+textarea {
+  width: 100%;
+  height: 4em;
+  font-size: 12px;
+  resize: none;
+  padding: 1em;
+}
+#options {
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  resize: none;
+  position: relative; border: none;
+  width: 30rem;
+  padding: 3rem; margin: auto; margin-top: 1rem;
+  cursor: default;
+}
+#options .active {
+  color: #2F2 !important;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Snowflake</h1>
+
+<p>
+<a href="https://trac.torproject.org/projects/tor/wiki/doc/Snowflake" target="_blank">Snowflake</a>
+is a WebRTC pluggable transport for Tor.
+</p>
+
+<p>
+This page enables you to use your web browser as a proxy to help other
+Internet users in censored places.
+When you click yes, your browser will act as a
+censorship circumvention proxy
+as long as you are viewing a page with the snowflake badge.
+</p>
+
+<div id='options'>
+
+<noscript>
+<hr/>
+Snowflake proxy requires javascript.
+<br/>
+To volunteer as a proxy, please enable javascript.
+</noscript>
+
+<div id='buttons' style='display:none'>
+<p>
+Do you want your browser to act as a proxy?
+</p>
+
+<p>
+<button onclick="enableSnowflake()">
+  Yes
+</button>
+<button onclick="disableSnowflake()">
+  No
+</button>
+</p>
+<div id="snowflake-status"></div>
+</div>
+
+<div id='cookies-disabled' style='display:none'>
+<hr/>
+<p>
+Your browser has cookies disabled. You will need to enable them in order
+to set Snowflake preferences.
+</p>
+</div>
+
+</div>
+
+<p>
+Minimum functionality has been achieved, and it is possible
+to bootstrap a Tor client to 100% using Snowflake, and the
+browsing experience using this PT is reasonable enough.
+</p>
+
+<p>
+However, Snowflake is also under active development and much work is needed.
+<br/>
+It is not yet stable or audited, probably has many issues,
+and should not yet be relied upon!!
+</p>
+
+See
+<a href="https://trac.torproject.org/projects/tor/wiki/doc/Snowflake"
+target="_blank">
+here</a> for more information.
+
+<hr>
+
+<p>
+It is now possible to embed the Snowflake badge on any website:
+</p>
+
+<textarea readonly>
+&lt;iframe src="https://snowflake.torproject.org/embed.html" width="88" height="16" frameborder="0" scrolling="no"&gt;&lt;/iframe&gt;
+</textarea>
+
+<p>
+Which looks like this:
+</p>
+<iframe src="embed.html" width="88" height="16" frameborder="0" scrolling="no"></iframe>
+
+<p>
+If it animates, then congratulations -- you are currently acting as a Tor bridge.
+</p>
+<hr>
+
+Repo: <a target="_blank"
+href="https://gitweb.torproject.org/pluggable-transports/snowflake.git/">
+gitweb.torproject.org/pluggable-transports/snowflake.git
+</a>
+<br/>
+Last update: <time>2019-01-22</time>
+
+<script>
+
+// Defaults to opt-in.
+var COOKIE_NAME = "snowflake-allow";
+var COOKIE_LIFETIME = "Thu, 01 Jan 2038 00:00:00 GMT";
+
+function readCookie(cookie) {
+  c = document.cookie.split('; ');
+  cookies = {};
+  for (i = 0 ; i < c.length ; i++) {
+    pair = c[i].split('=');
+    cookies[pair[0]] = pair[1];
+  }
+  return cookies[cookie];
+}
+
+function enableSnowflake() {
+  setSnowflakeCookie(1);
+  location.reload();
+}
+
+function disableSnowflake() {
+  setSnowflakeCookie(0);
+  location.reload();
+}
+
+function setSnowflakeCookie(val) {
+  document.cookie = COOKIE_NAME + "=" + val + ";path=/ ;expires=" + COOKIE_LIFETIME;
+}
+
+window.onload = function() {
+  if (navigator.cookieEnabled) {
+    // Both JS and cookies enabled -- display normal buttons.
+    document.getElementById('buttons').style = '';
+  } else {
+    // Display the cookies disabled message if necessary.
+    document.getElementById('cookies-disabled').style = '';
+  }
+  var enabled = readCookie(COOKIE_NAME);
+  var $status = document.getElementById('snowflake-status');
+  if ("1" === enabled) {
+    $status.innerHTML = 'Snowflake Proxy is ACTIVE <br/><br/>' +
+    'Thank you for contributing to internet freedom!';
+    $status.className = 'active';
+  } else {
+    $status.innerHTML = 'Snowflake Proxy is OFF';
+    $status.className = '';
+  }
+}
+</script>
+
+</body>
+</html>
