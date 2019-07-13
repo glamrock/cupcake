@@ -1,0 +1,78 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ */
+function cupcake_bridge_block_info() {
+  $blocks['iframe'] = array(
+    'info' => t('Cupcake Bridge: iFrame'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function cupcake_bridge_block_configure($delta) {
+  $form = array();
+  switch($delta) {
+    case 'iframe':
+      $form['iframe'] = array(
+        '#type' => 'fieldset',
+        '#title' => t('iFrame'),
+      );
+      $form['iframe']['cupcake_bridge_iframe'] = array(
+        '#type' => 'radios',
+        '#title' => t('Choose iframe'),
+        '#title_display' => 'invisible',
+        '#options' => array(
+          'no_cookie' => t('Cookie not required'),
+          'cookierequired' => t('Cookie required'),
+        ),
+        '#default_value' => variable_get('cupcake_bridge_iframe', 'no_cookie'),
+        '#required' => TRUE,
+        '#description' => t("'Cookie Required' means the iframe will include the <em>cookierequired</em> parameter."),
+      );
+      break;
+  }
+  return $form;
+}
+
+/**
+ * Implements hook_block_save().
+ */
+function cupcake_bridge_block_save($delta = '', $edit = array()) {
+  switch($delta) {
+    case 'iframe':
+      variable_set('cupcake_bridge_iframe', $edit['cupcake_bridge_iframe']);
+      break;
+  }
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function cupcake_bridge_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'iframe':  
+      $block['subject'] = '';
+      $block['content']['#theme'] = 'cupcake_bridge_iframe';
+      return $block;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function cupcake_bridge_theme() {
+  $path = drupal_get_path('module', 'cupcake_bridge');
+  return array(
+    'cupcake_bridge_iframe' => array(
+      'variables' => array(),
+      'template' => 'theme/cupcake-bridge-iframe',
+      'file' => 'theme/cupcake_bridge.theme.inc',
+    ),
+  );
+}

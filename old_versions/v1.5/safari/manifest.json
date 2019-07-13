@@ -1,0 +1,28 @@
+{
+  "name": "Cupcake",
+  "version": "0.1",
+  "manifest_version": 1,
+  "description": "Make a Tor bridge automagically!",
+  "global": { "page": "proxy.html"},
+  "icons": {
+    "19" : "images/cupcake19.png",
+    "24" : "images/cupcake24.png",
+    "38" : "images/cupcake48.png",
+    "48" : "images/cupcake48.png",
+    "128" : "images/cupcake128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/cupcake48.png",
+    "default_title": "Cupcake",
+    "default_popover": "menu.html"
+  },
+   "incognito": "split",
+  "permissions": [
+    "https://crypto.stanford.edu/*",
+    "http://crypto.stanford.edu/*",
+    "http://fp-facilitator.org/*",
+    
+    "background",
+    "cookies" ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://*.stanford.edu http://fp-facilitator.org/* https://*.bamsoftware.com https://*.fp-facilitator.org; object-src 'self'"
+  }
