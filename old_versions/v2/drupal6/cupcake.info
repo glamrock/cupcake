@@ -1,4 +1,0 @@
-name = Cupcake
-version = 0.5
-description = Make Tor bridges automagically!
-core = 6.x

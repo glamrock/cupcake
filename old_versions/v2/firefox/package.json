@@ -1,9 +1,0 @@
-{
-  "name": "cupcake",
-  "title": "Cupcake Bridge",
-  "id": "jid1-JfAdl0k8m13aTQ",
-  "description": "Become a flashproxy and contribute to the Tor network.",
-  "author": " Griffin Boyce <griffin@cryptolab.net>, Uzair Farooq <uzairfarooq11@gmail.com>",
-  "license": "BSD",
-  "version": "1.2.1"
-}
