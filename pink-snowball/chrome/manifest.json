@@ -1,11 +1,12 @@
 {
   "name": "Cupcake",
-  "version": "1.875",
+  "version": "1.301",
   "manifest_version": 2,
   "description": "Snowflake for Chrome",
-  "background": { "scripts": ["flashproxy.js", "background.js"]},
+  "background": { "scripts": ["snowflake.js", "background.js"]},
   "icons": {
     "24" : "images/cupcake24.png",
+    "32" : "images/cupcake36.png",
     "38" : "images/cupcake48.png",
     "48" : "images/cupcake48.png",
     "128" : "images/cupcake128.png"
@@ -17,8 +18,11 @@
   },
    "incognito": "split",
   "permissions": [
-    "http://fp-facilitator.org/*",
-    "https://fp-facilitator.org/*",
+    "http://snowflake-broker.bamsoftware.com/*",
+    "https://snowflake-broker.bamsoftware.com/*",
+    "https://snowflake.bamsoftware.com/*",
+    "http://snowflake.bamsoftware.com/*",
+    "https://snowflake.bamsoftware.com:443/*"
 
     "background",
     "cookies" ],
